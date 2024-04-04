@@ -8,11 +8,9 @@ library(extrafont)
 library(gganimate)
 library(ggbeeswarm)
 library(plotly)
-
 library(colorspace)
 library(RColorBrewer)
 library(viridis)
-
 library(geobr)
 library(cartogram)
 library(sf)
@@ -63,7 +61,7 @@ tema_mapa <- function() {
 # dados iniciais ----------------------------------------------------------
 #setwd("/Users/tiago/Documents/gitlab/empresas/codigo/version-html/html/v2020")
 
-setwd("~/Github/estatais-estados-master/estatais-estados-master/v2023")
+setwd("~/Github/empresas-estados/v2023")
 
 tab_uf <- read_excel("./dados/dados-originais/tab_ufs.xlsx") %>%
   select(Estado, Nome_estado, REGIAO)

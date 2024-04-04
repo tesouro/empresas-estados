@@ -19,6 +19,7 @@ library(sf)
 library(geojsonsf)
 
 
+
 # estilo dos gráficos -----------------------------------------------------
 
 loadfonts()
@@ -63,18 +64,18 @@ tema_mapa <- function() {
 # dados iniciais ----------------------------------------------------------
 #setwd("/Users/tiago/Documents/gitlab/empresas/codigo/version-html/html/v2020")
 
-setwd("~/Github/estatais-estados-master/estatais-estados-master/v2023")
+setwd("~/Github/empresas-estados/v2023")
 
 tab_uf <- read_excel("./dados/dados-originais/tab_ufs.xlsx") %>%
   select(Estado, Nome_estado, REGIAO)
-
+tab_uf
 
 
 dados_raw <- read_excel("./dados/dados-originais/quadro_estatais.xlsx", sheet = "Todos")
 
 #tab_setores <- read_excel("./dados/dados-originais/tab_setores.xlsx", sheet = "tab")
 tab_definicoes_setores <- read_excel("./dados/dados-originais/tab_setores.xlsx", sheet = "def")
-
+tab_definicoes_setores
 dados_selecionados_raw <- dados_raw %>%
   select(
     Estado    = UF,
