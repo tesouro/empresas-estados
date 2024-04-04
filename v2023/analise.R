@@ -8,11 +8,9 @@ library(extrafont)
 library(gganimate)
 library(ggbeeswarm)
 library(plotly)
-
 library(colorspace)
 library(RColorBrewer)
 library(viridis)
-
 library(geobr)
 library(cartogram)
 library(sf)
