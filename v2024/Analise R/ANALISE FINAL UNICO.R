@@ -259,25 +259,25 @@ ggsave(plot = graf_qde_emp, "./plots_final/qde_seg.png", h = 4.5, w = 5.5)#, typ
 
 #-------------------------------------
 
-qde_empresas_seg <- dados_selecionados %>%
-  group_by(setor) %>%
-  summarise(qde_tot = n()) %>%
-  ungroup() %>%
-  filter(!is.na(setor))
-
-graf_qde_emp <- 
-  ggplot(qde_empresas_seg, aes(x = reorder(setor, qde_tot), y = qde_tot)) +
-  geom_col(width = 0.65, fill = "#5c4b51") +  # Define uma única cor para as barras
-  geom_text(aes(label = qde_tot), 
-            vjust = 0.4, hjust = 1.1,
-            family = "Source Sans Pro", size = 3.5, color = "grey") +
-  coord_flip() +
-  labs(x = NULL, y = NULL,
-       title = NULL) +
-  tema_barra() + 
-  theme(axis.text = element_text(size = 8))
-
-ggsave(plot = graf_qde_emp, "./plots_final/qde_seg_total.png", h = 4.5, w = 5.5)
+#qde_empresas_seg <- dados_selecionados %>%
+#  group_by(setor) %>%
+#  summarise(qde_tot = n()) %>%
+#  ungroup() %>%
+#  filter(!is.na(setor))
+#
+#graf_qde_emp <- 
+#  ggplot(qde_empresas_seg, aes(x = reorder(setor, qde_tot), y = qde_tot)) +
+#  geom_col(width = 0.65, fill = "#5c4b51") +  # Define uma única cor para as barras
+#  geom_text(aes(label = qde_tot), 
+#            vjust = 0.4, hjust = 1.1,
+#            family = "Source Sans Pro", size = 3.5, color = "grey") +
+#  coord_flip() +
+#  labs(x = NULL, y = NULL,
+#       title = NULL) +
+#  tema_barra() + 
+#  theme(axis.text = element_text(size = 8))
+#
+#ggsave(plot = graf_qde_emp, "./plots_final/qde_seg_total.png", h = 4.5, w = 5.5)
 
 ###################################################################################################################
 
@@ -310,25 +310,25 @@ ggsave(plot = graf_qde_emp_est, "./plots_final/qde_est.png", h = 6.5, w = 5)
 
 #----------------------------
 
-qde_empresas_est <- dados_selecionados %>%
-  group_by(Nome_estado) %>%
-  summarise(qde_tot = n()) %>%
-  ungroup() %>%
-  filter(!is.na(Nome_estado))
-
-graf_qde_emp_est <- 
-  ggplot(qde_empresas_est, aes(x = reorder(Nome_estado, qde_tot), y = qde_tot)) +
-  geom_col(width = 0.65, fill = "#5c4b51") +  # Cor fixa para as barras
-  geom_text(aes(label = qde_tot),
-            vjust = 0.4, hjust = 1.1,
-            family = "Source Sans Pro", size = 3.5, color = "grey") +
-  coord_flip() +
-  labs(x = NULL, y = NULL,
-       title = NULL) +
-  tema_barra() + 
-  theme(axis.text = element_text(size = 9))
-
-ggsave(plot = graf_qde_emp_est, "./plots_final/qde_est_total.png", h = 6.5, w = 5)
+#qde_empresas_est <- dados_selecionados %>%
+#  group_by(Nome_estado) %>%
+#  summarise(qde_tot = n()) %>%
+#  ungroup() %>%
+#  filter(!is.na(Nome_estado))
+#
+#graf_qde_emp_est <- 
+#  ggplot(qde_empresas_est, aes(x = reorder(Nome_estado, qde_tot), y = qde_tot)) +
+#  geom_col(width = 0.65, fill = "#5c4b51") +  # Cor fixa para as barras
+#  geom_text(aes(label = qde_tot),
+#            vjust = 0.4, hjust = 1.1,
+#            family = "Source Sans Pro", size = 3.5, color = "grey") +
+#  coord_flip() +
+#  labs(x = NULL, y = NULL,
+#       title = NULL) +
+#  tema_barra() + 
+#  theme(axis.text = element_text(size = 9))
+#
+#ggsave(plot = graf_qde_emp_est, "./plots_final/qde_est_total.png", h = 6.5, w = 5)
 
 ##############################################################################################################
 
@@ -587,7 +587,7 @@ dados_lucro_preju <- dados_selecionados %>%
                           'Setor: ', setor, '\n', # nolint
                           'PL: R$ ', PL_formatado, '\n', # nolint
                           'Lucros / Prejuízos no ano: R$ ', format(lucros, big.mark = '.', decimal.mark = ","), '\n', # nolint
-                          'ROE: ', ifelse(is.na(ROE), 'Não disponível', percent(round(ROE,4)))), # nolint
+                          'ROE: ', ifelse(is.na(ROE), 'Não disponível', percent(round(ROE, 4)))), # nolint
          setores_principais = ifelse(setor %in% principais_setores, setor, "Demais")) # nolint
 
 qde_NAs_lucro <- length(which(is.na(dados_selecionados$lucros) == TRUE)) # nolint
@@ -606,7 +606,7 @@ ggplot(dados_lucro_preju %>% filter(dep != "Não Informado"), aes(y = lucros, co
   #subtitle = "Mais de 60% das dependentes têm ROE negativo, mais de 60% das não dependentes têm ROE positivo") + # nolint
   tema()
 
-# grafico barras
+# gráfico de barras
 
 sumario_lucro <- dados_selecionados %>%
   mutate(result_pos = ifelse(lucros >= 0, "Positivo", "Negativo")) %>%
@@ -615,7 +615,7 @@ sumario_lucro <- dados_selecionados %>%
   ungroup() %>%
   group_by(dep) %>%
   mutate(tot_por_dep = sum(qde),
-         percent_dep = percent(qde / tot_por_dep))
+         percent_dep = percent(round(qde / tot_por_dep, 3)))  # Arredondamento para 3 casas antes de formatar
 
 sumario_lucro_total <- sumario_lucro %>%
   group_by(result_pos) %>%
@@ -625,7 +625,7 @@ sumario_lucro_total <- sumario_lucro %>%
   ungroup() %>%
   group_by(dep) %>%
   mutate(tot_por_dep = sum(qde),
-         percent_dep = percent(qde / tot_por_dep)) %>%
+         percent_dep = percent(round(qde / tot_por_dep, 3))) %>% # Arredondamento para 3 casas antes de formatar
   ungroup() %>%
   bind_rows(sumario_lucro)
 
@@ -633,14 +633,14 @@ graf_barra_lucro <- ggplot(sumario_lucro_total, aes(x = dep, y = qde, fill = res
   geom_col(position = "fill", width = 0.65) +
   geom_text(aes(label = paste0(qde, "\n(", percent_dep,")")), position = position_fill(vjust = 0.5), # nolint
             family = "Source Sans Pro", size = 3.2, color = "ghostwhite") +
-  scale_y_continuous(labels = percent) +
+  scale_y_continuous(labels = function(x) percent(round(x, 1))) + # Arredondamento aplicado ao eixo Y
   scale_fill_manual(values = c("Negativo" = "#DC143C",
                                "Positivo" = "#008080"),
                     na.value = "darkgray") +
   labs(x = NULL, y = NULL) +
   tema_barra()
 
-ggsave(plot = graf_barra_lucro, "./plots_final/bar_lucro.png", h = 6, w = 4, device = "png") # nolint
+ggsave(plot = graf_barra_lucro, "./plots_final/bar_lucro.png", h = 4, w = 4, device = "png") # nolint
 
 #-----------------------------------------
 
@@ -925,7 +925,7 @@ sumario_roe_gov_sinal <- dados_roe %>%
 # empresas fora do limte
 dados_roe %>% filter(ROE > 2 | ROE < -2) %>% select(emp, Estado, gov, ROE) # nolint
 
-roe_gov <- ggplot(dados_roe %>% filter(!is.na(ROE), ROE != 0, PL > 0, ROE >= -1, ROE <= 1.5, !is.na(lucros), lucros != 0), aes(y = ROE, color = sinal_ROE, x = gov, label = Empresa)) + # nolint
+roe_gov <- ggplot(dados_roe %>% filter(!is.na(ROE), ROE != 0, PL > 0, ROE >= -1, ROE <= 1.5, !is.na(lucros), lucros != 0, lucros > 0), aes(y = ROE, color = sinal_ROE, x = gov, label = Empresa)) + # nolint
   geom_quasirandom() + #beeswarm() + #aes(size = PL),
   scale_color_manual(values = c("Negativo" = "#DC143C",
                                 "Positivo" = "#008080")) +
@@ -993,7 +993,7 @@ plr <- ggplot(dados_plr_plot,
 
 plr
 
-ggsave(plot = plr, "./plots_final/plr.png", h = 6, w = 6)
+ggsave(plot = plr, "./plots_final/plr.png", h = 7, w = 7)
 
 dados_selecionados %>%
   filter(is.na(plr_rva)) %>% nrow() # nolint
@@ -1133,68 +1133,155 @@ print(paste("Gráfico com filtro criado em:", html_file))
 
 #####################################################################################################################
 
-# Definição das cores específicas para cada setor
-cores_setores <- c(
-  "ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS" = "#0D0887",
-  "COMUNICAÇÃO" = "#310597",
-  "DESENVOLVIMENTO REGIONAL" = "#4C02A1",
-  "ENERGIA" = "#6600A7",
-  "FINANCEIRO" = "#7E03A8",
-  "GÁS E DERIVADOS" = "#9511A1",
-  "GESTÃO DE ATIVOS" = "#A92395",
-  "HABITAÇÃO E URBANIZAÇÃO" = "#BC3488",
-  "INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO" = "#CC4678",
-  "MINERAÇÃO" = "#DA596A",
-  "OUTROS" = "#E56B5D",
-  "PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA" = "#F07F4F",
-  "PORTOS E HIDROVIAS" = "#F89441",
-  "SANEAMENTO" = "#FDAB33",
-  "SAÚDE" = "#FDC328",
-  "TRANSPORTE" = "#F9DD25",
-  "TURISMO" = "#F0F921"
-)
-
-# Criação da pasta, se não existir
-if (!dir.exists("./plots_final/quebra")) {
-  dir.create("./plots_final/quebra", recursive = TRUE)
-}
-
-# Loop para criar e salvar um gráfico para cada setor
-for (setor_atual in setores$setor) {
-  # Filtra os dados para o setor atual
-  mapa_qde_setor <- mapa_qde %>%
-    filter(setor == setor_atual)
-  
-  # Cria o gráfico para o setor atual
-  graf_mapa_individual <- ggplot(mapa_qde_setor) +
-    geom_sf(data = mapa, fill = "#EFEFEF", color = "ghostwhite") +  # Base do mapa
-    geom_sf(aes(fill = ifelse(qde > 0, setor, NA)), color = "ghostwhite") + # Preenchimento por setor
-    scale_fill_manual(values = cores_setores, na.value = "#EFEFEF") + # Aplica cores definidas
-    theme_void() + # Remove elementos desnecessários do gráfico
-    theme(
-      text = element_text(family = "Source Sans Pro"),
-      legend.position = "none",
-      plot.title = element_text(size = 12, hjust = 0.5)
-    ) +
-    ggtitle(paste("Setor:", setor_atual)) # Adiciona título ao gráfico
-  
-  # Caminho para salvar o gráfico
-  caminho_arquivo <- paste0("./plots_final/quebra/", setor_atual, ".png")
-  
-  # Salva o gráfico
-  ggsave(
-    filename = caminho_arquivo,
-    plot = graf_mapa_individual,
-    width = 9,
-    height = 8,
-    dpi = 300
-  )
-}
-
-print("Gráficos gerados e salvos em ./plots_final/quebra.")
+## Definição das cores específicas para cada setor
+#cores_setores <- c(
+#  "ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS" = "#0D0887",
+#  "COMUNICAÇÃO" = "#310597",
+#  "DESENVOLVIMENTO REGIONAL" = "#4C02A1",
+#  "ENERGIA" = "#6600A7",
+#  "FINANCEIRO" = "#7E03A8",
+#  "GÁS E DERIVADOS" = "#9511A1",
+#  "GESTÃO DE ATIVOS" = "#A92395",
+#  "HABITAÇÃO E URBANIZAÇÃO" = "#BC3488",
+#  "INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO" = "#CC4678",
+#  "MINERAÇÃO" = "#DA596A",
+#  "OUTROS" = "#E56B5D",
+#  "PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA" = "#F07F4F",
+#  "PORTOS E HIDROVIAS" = "#F89441",
+#  "SANEAMENTO" = "#FDAB33",
+#  "SAÚDE" = "#FDC328",
+#  "TRANSPORTE" = "#F9DD25",
+#  "TURISMO" = "#F0F921"
+#)
+#
+## Criação da pasta, se não existir
+#if (!dir.exists("./plots_final/quebra")) {
+#  dir.create("./plots_final/quebra", recursive = TRUE)
+#}
+#
+## Loop para criar e salvar um gráfico para cada setor
+#for (setor_atual in setores$setor) {
+#  # Filtra os dados para o setor atual
+#  mapa_qde_setor <- mapa_qde %>%
+#    filter(setor == setor_atual)
+#  
+#  # Cria o gráfico para o setor atual
+#  graf_mapa_individual <- ggplot(mapa_qde_setor) +
+#    geom_sf(data = mapa, fill = "#EFEFEF", color = "ghostwhite") +  # Base do mapa
+#    geom_sf(aes(fill = ifelse(qde > 0, setor, NA)), color = "ghostwhite") + # Preenchimento por setor
+#    scale_fill_manual(values = cores_setores, na.value = "#EFEFEF") + # Aplica cores definidas
+#    theme_void() + # Remove elementos desnecessários do gráfico
+#    theme(
+#      text = element_text(family = "Source Sans Pro"),
+#      legend.position = "none",
+#      plot.title = element_text(size = 12, hjust = 0.5)
+#    ) +
+#    ggtitle(paste("Setor:", setor_atual)) # Adiciona título ao gráfico
+#  
+#  # Caminho para salvar o gráfico
+#  caminho_arquivo <- paste0("./plots_final/quebra/", setor_atual, ".png")
+#  
+#  # Salva o gráfico
+#  ggsave(
+#    filename = caminho_arquivo,
+#    plot = graf_mapa_individual,
+#    width = 9,
+#    height = 8,
+#    dpi = 300
+#  )
+#}
+#
+#print("Gráficos gerados e salvos em ./plots_final/quebra.")
 
 
 #---------------------------------------------------------
+
+#library(htmltools)
+#library(base64enc)
+#
+## Define o caminho da pasta com as imagens
+#caminho_absoluto <- "C:/Users/gustavo.silva/OneDrive - Tesouro Nacional/Área de Trabalho/projetos/RAIO_X_EMPRESAS_DOS_ESTADOS/2023/plots_final/quebra"
+#
+## Lista as imagens na pasta
+#imagens <- list.files(caminho_absoluto, pattern = "\\.png$", full.names = TRUE)
+#
+## Gera os nomes dos setores a partir dos nomes dos arquivos
+#setores <- gsub("\\.png$", "", basename(imagens))
+#
+## Função para converter imagens em Base64
+#imagem_para_base64 <- function(caminho_imagem) {
+#  encoded <- base64encode(caminho_imagem)
+#  paste0("data:image/png;base64,", encoded)
+#}
+#
+## Converte as imagens para Base64
+#imagens_base64 <- lapply(imagens, imagem_para_base64)
+#
+## Cria o filtro e a galeria em HTML
+#html <- tags$html(
+#  tags$head(
+#    tags$title("Galeria de Mapas"),
+#    tags$style(HTML("
+#      body { font-family: Arial, sans-serif; margin: 20px; }
+#      .image-container { display: none; text-align: center; margin-top: 20px; }
+#      .image-container.active { display: block; }
+#      .thumbnail-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; }
+#      .thumbnail { width: 50px; cursor: pointer; }
+#      .image-container img { width: 30%; }
+#      img { border: 1px solid #ddd; border-radius: 4px; }
+#      img:hover { border: 1px solid #777; }
+#    "))
+#  ),
+#  tags$body(
+#    tags$label("Selecione o setor:"),
+#    tags$select(
+#      id = "filter",
+#      tags$option(value = setores[1], setores[1], selected = TRUE),
+#      lapply(seq_along(setores)[-1], function(i) {
+#        tags$option(value = setores[i], setores[i])
+#      })
+#    ),
+#    lapply(seq_along(imagens_base64), function(i) {
+#      tags$div(
+#        class = if (i == 1) "image-container active" else "image-container",
+#        id = setores[i],
+#        tags$img(src = imagens_base64[[i]])
+#      )
+#    }),
+#    tags$div(
+#      class = "thumbnail-container",
+#      lapply(seq_along(imagens_base64), function(i) {
+#        tags$img(
+#          src = imagens_base64[[i]],
+#          class = "thumbnail",
+#          onclick = paste0("document.getElementById('filter').value='", setores[i], "'; document.getElementById('filter').dispatchEvent(new Event('change'));")
+#        )
+#      })
+#    ),
+#    tags$script(HTML("
+#      const filterDropdown = document.getElementById('filter');
+#      const containers = document.querySelectorAll('.image-container');
+#      const initialSelection = filterDropdown.value;
+#      containers.forEach(container => container.classList.remove('active'));
+#      if (initialSelection) {
+#        document.getElementById(initialSelection).classList.add('active');
+#      }
+#      filterDropdown.addEventListener('change', function() {
+#        containers.forEach(container => container.classList.remove('active'));
+#        const selected = this.value;
+#        if (selected) {
+#          document.getElementById(selected).classList.add('active');
+#        }
+#      });
+#    "))
+#  )
+#)
+#
+## Salva o arquivo HTML
+#html_file <- file.path(caminho_absoluto, "../galeria.html")
+#save_html(html, html_file)
+#
+#print(paste("Galeria HTML criada em:", html_file))
 
 library(htmltools)
 library(base64enc)
@@ -1217,7 +1304,7 @@ imagem_para_base64 <- function(caminho_imagem) {
 # Converte as imagens para Base64
 imagens_base64 <- lapply(imagens, imagem_para_base64)
 
-# Cria o filtro e a galeria em HTML
+# Cria o filtro e a galeria em HTML sem miniaturas
 html <- tags$html(
   tags$head(
     tags$title("Galeria de Mapas"),
@@ -1225,9 +1312,7 @@ html <- tags$html(
       body { font-family: Arial, sans-serif; margin: 20px; }
       .image-container { display: none; text-align: center; margin-top: 20px; }
       .image-container.active { display: block; }
-      .thumbnail-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; }
-      .thumbnail { width: 50px; cursor: pointer; }
-      .image-container img { width: 30%; }
+      .image-container img { width: 80%; }
       img { border: 1px solid #ddd; border-radius: 4px; }
       img:hover { border: 1px solid #777; }
     "))
@@ -1248,16 +1333,6 @@ html <- tags$html(
         tags$img(src = imagens_base64[[i]])
       )
     }),
-    tags$div(
-      class = "thumbnail-container",
-      lapply(seq_along(imagens_base64), function(i) {
-        tags$img(
-          src = imagens_base64[[i]],
-          class = "thumbnail",
-          onclick = paste0("document.getElementById('filter').value='", setores[i], "'; document.getElementById('filter').dispatchEvent(new Event('change'));")
-        )
-      })
-    ),
     tags$script(HTML("
       const filterDropdown = document.getElementById('filter');
       const containers = document.querySelectorAll('.image-container');
