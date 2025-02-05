@@ -52,7 +52,7 @@
 
         <aside class="conteudo-destaque-lateral">Os dados utilizados estão disponíveis para serem baixados. Clique <a href="#nota-final">aqui</a> para saber mais.</aside>
 
-        <p>Na ficha abaixo você encontra informações detalhadas das estatais. Para isso, basta selecionar o estado desejado e depois clicar nos círculos. Cada círculo representa uma estatal e traz as seguintes informações: dependência, situação, capital social, investimento realizado, lucro, e link para a carta anual da empresa, nos casos em que ela foi disponibilizada.</p>
+        <p>No gráfico abaixo é apresentada a distribuição (frequência) de estatais por setores e situação de dependência, onde cada círculo representa uma empresa estatal. Deslizando o mouse sobre os círculos são apresentadas as seguintes informações: nome da empresa, estado e situação. Também, é possível selecionar um estado para ver apenas as suas empresas. </p>
 
         <figure class="plot-container">
             <h3 class="plot-title">Ficha básica das empresas por setor</h3>
@@ -71,7 +71,7 @@
 
         <p>Conforme os dados informados no SICONFI, existem 295 empresas controladas pelos Estados, sendo que 259 estão em situação ativa e 36 em fase de liquidação, destas 32 já se encontravam nessa situação no exercício anterior. Além disso, 21 destas empresas que estão sendo extintas são estatais dependentes.  </p>
 
-        <p>Em relação ao exercício de 2022, tivemos um aumento na quantidade de estatais, pois, embora 15 empresas deixaram de constar em relação ao ano anterior (2 em Goiás, Minas Gerais, Piauí e Rio Grande do Sul e 1 Ceará, Distrito Federal, Espirito Santo, Paraná, Roraima,  Santa Catarina e São Paulo), foram incluídos dados de mais 18 empresas, sendo 4 do Mato Grosso, 3 de Alagoas, 3 do Piauí, 2 do Ceará, 2 do Distrito Federal, e 1 de cada um dos seguintes estados: Goiás, Roraima, Sergipe e Tocantins.</p>
+        <p>Em relação ao exercício de 2022, tivemos um aumento na quantidade de estatais, pois, embora 15 empresas deixaram de constar em relação ao ano anterior (sendo duas para os seguintes estados: Goiás, Minas Gerais, Piauí e Rio Grande do Sul; e uma para os seguintes estados: Ceará, Distrito Federal, Espirito Santo, Paraná, Roraima, Santa Catarina e São Paulo), foram incluídos dados de mais 18 empresas, sendo 4 do Mato Grosso, 3 de Alagoas, 3 do Piauí, 2 do Ceará, 2 do Distrito Federal, e 1 de cada um dos seguintes estados: Goiás, Roraima, Sergipe e Tocantins.</p>
         
         <p> A quantidade de estatais que cada Estado possui varia bastante, o Distrito Federal possui 25 empresas, seguido pelo Rio de Janeiro, com 22, e Santa Catarina, com 16. Em quarto lugar encontram-se Pernambuco, Paraíba, Minas Gerais e Goiás, com 15 estatais cada. Já os Estados com a menor quantidade de estatais são Amapá e Tocantins, com 3 cada, e Roraima e Maranhão, com 5 cada. </p>
 
@@ -102,7 +102,7 @@
             <img class="plot" src="./plots/situacao_empresas.jpeg" alt="Visualização da quantidade de empresas por estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
         </figure>
 
-        <p>Ao examinar a quantidade de empresas controladas de acordo com os segmentos empresariais, observa-se que o setor Financeiro possuindo 38 empresas e o setor de Saneamento possuindo 28, são setores com o maior quantitativo de estatais, apresentando-se como setores de maior representatividade entre os estados. Em 3º e 4º lugares estão Desenvolvimento Regional e Habitação e Urbanização apresentando 23 e 22 respectivamente. Entre os segmentos com menor número de empresas, destacam-se os setores de Saúde com 5, Mineração com 7 e tanto Turismo quanto Comunicação apresentam 9 empresas.</p>
+        <p>Ao examinar a quantidade de empresas controladas de acordo com os segmentos empresariais, observa-se que o setor Financeiro possuindo 38 empresas e o setor de Saneamento possuindo 28, são setores com o maior quantitativo de estatais, apresentando-se como setores de maior representatividade entre os estados. Em 3º e 4º lugares estão Desenvolvimento Regional e Habitação e Urbanização apresentando 23 e 22 respectivamente. Entre os segmentos com menor número de empresas, destacam-se os setores de Saúde com 5, Mineração com 7, e os setores de Turismo e Comunicação apresentando 9 empresas.</p>
 
         <p>Abaixo é possível selecionar um setor para exibir sua definição, bem como um mapa indicando os estados que possuem empresas nessa área de atuação.  </p>
 
@@ -174,13 +174,10 @@
                 <img class="plot" src="./plots/bar_lucro_setor.png" alt="Gráfico de barras com os lucros e prejuízos totais por setor em 2021.">
         </figure>
        
-        <figure class="plot-container">
-            <h3 class="plot-title">Evolução do Patrimônio Líquido Total</h3>
-            <img class="plot" src="./plots/evolucao_patrimonio_liquido.jpeg" alt="Visualização da quantidade de empresas por estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
-        </figure>
+    
 
         <figure class="plot-container">
-            <h3 class="plot-title">Estimativa de rentabilidade das empresas</h3>
+            <h3 class="plot-title"></h3>
             <h4 class="plot-subtitle">Rentabilidade definida como a razão entre lucro ou prejuízo e patrimônio líquido. As empresas são representadas por pontos, da seguinte forma:
             <br/> <span style="color:#008080; font-family: 'Source Sans Pro';">&#9679; rentabilidade positiva</span> <span style="color:#DC143C; font-family: 'Source Sans Pro';">&#9679; rentabilidade negativa</span> 
             <br/>Estão excluídas 62 empresas sem informação de lucro / prejuízo ou patrimônio líquido, ou que apresentaram patrimônio líquido menor ou igual a zero. Para uma melhor visualização, não está apresentada uma empresa para a qual o valor do indicador de rentabilidade ficou abaixo de -100%, e 2 empresas para quais o indicador de rentabilidade foi superior a +100%.</h4>
@@ -189,12 +186,17 @@
 
     <p>Observa-se que a quantidade de estatais dependentes com rentabilidade negativa (49%) é maior do que a das estatais não dependentes (29%). Entretanto, diversos fatores podem estar associados a esse resultado. O fato de as estatais dependentes apresentarem piores resultados pode ser um indicativo de que, de modo geral, a gestão das estatais não dependentes é melhor. No entanto, uma outra explicação para esse resultado pode estar associada ao fato de que alguns setores de serviços essenciais são predominantemente dependentes e possuem a finalidade associada ao atendimento de políticas públicas e não de lucro.  </p>
 
-    <p>Ao se explorar os números das rentabilidades pelo critério de dependência e por segmentos empresariais, verifica-se que, dentre as empresas dependentes, as de Saúde possuem a maior média de rentabilidade para o ano de 2023, com uma cifra de 101%. Dentre as empresas não dependentes destacam-se os setores Desenvolvimento Regional, Gás e Derivados e Energia, com rentabilidades médias de 70%, 37% e 22%, respectivamente. Já as empresas com rentabilidades médias negativas, destacam-se as dependentes de Turismo (-806%) e Transporte (-60%).</p>
+    <p>Ao se explorar os números das rentabilidades pelo critério de dependência e por segmentos empresariais, verifica-se que, dentre as empresas dependentes, as de Saúde possuem a maior média de rentabilidade para o ano de 2023, 101%. Dentre as empresas não dependentes destacam-se os setores Desenvolvimento Regional, Gás e Derivados e Energia, com rentabilidades médias de 70%, 37% e 22%, respectivamente. Já as empresas com rentabilidades médias negativas, destacam-se as dependentes de Turismo (-806%) e Transporte (-60%).</p>
     
     <p>65 empresas pagaram PLR (Participação nos Lucros e Resultados) ou RVA (Remuneração Variável Anual) no exercício de 2023, das quais 2 são dependentes. Os principais setores que pagaram algum tipo de participação nos resultados foram: Financeiro (19 empresas), Saneamento (11 empresas), e Gás e Derivados (10 empresas).  </p>
     
     <p>O gráfico abaixo apresenta a evolução do patrimônio líquido  total das estatais desde 2021. Observa-se que entre os exercícios de 2021 e 2022 houve um incremento de R$ 19,8 bilhões, e entre 2022 e 2023 houve um decréscimo de R$ 8,7 bilhões.  </p>
     
+    <figure class="plot-container">
+        <h3 class="plot-title">Evolução do Patrimônio Líquido Total</h3>
+        <img class="plot" src="./plots/evolucao_patrimonio_liquido.jpeg" alt="Visualização da quantidade de empresas por estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
+    </figure>
+
     <figure class="plot-container">
         <h3 class="plot-title">Estimativa de rentabilidade média das empresas por setor</h3>
         <h4 class="plot-subtitle">Rentabilidade definida como a razão entre lucro ou prejuízo e patrimônio líquido. Estão excluídas 62 empresas sem informação de lucro / prejuízo ou patrimônio líquido, ou que apresentaram patrimônio líquido menor ou igual a zero. Para uma melhor visualização, não estão apresentadas empresas para a qual o valor do indicador de rentabilidade ficou abaixo de -100% e para as quais o indicador de rentabilidade foi superior a +100%.</h4>   
@@ -210,7 +212,7 @@
 
     <figure class="plot-container">
         <h3 class="plot-title">Pagamento de Participação nos Lucros</h3>
-        <h4 class="plot-subtitle">Os números indicam o percentual de empresas do setor que pagaram PLR, para as dependentes e para as não dependentes. Estão excluídas oito empresas para as quais não foram fornecidas as informações necessárias.</h4>
+        <h4 class="plot-subtitle">Os números indicam o percentual de empresas não dependentes de cada setor que pagaram PLR. Estão excluídas oito empresas para as quais não foram fornecidas as informações necessárias.</h4>
         <ul class="plot-legenda">
             <li><span class="plot-legenda-key" style = "background-color: #735D36;"></span> Empresa que pagou PLR</li>
             <li><span class="plot-legenda-key" style = "background-color: #F4C773;"></span> Empresa que não pagou PLR</li>         
@@ -240,8 +242,8 @@
                 <td> SP </td> 
                 <td class="nome-empresa-cell">COMPANHIA AMBIENTAL DO ESTADO DE SAO PAULO</td> 
                 <td> Não Dependente </td> 
-                <td class="value-cell"> -R$ 22.938.360,73   </td> 
-                <td class="value-cell"> -R$ 116.331.803,93</td>
+                <td class="value-cell value-cell-neg"> -R$ 22.938.360,73   </td> 
+                <td class="value-cell value-cell-neg"> -R$ 116.331.803,93</td>
             </tr>
 
             <tr> 
@@ -340,7 +342,6 @@
             <img class="plot" style="width:95%;" src="./plots/roe_gov.png" alt="Gráfico que mostra cada empresa como um ponto. Os pontos/empresas estãos dispostos verticalmente conforme a rentabilidade obtida em 2021, a partir do valor zero (quanto maior a rentabilidade, mais para o alto o ponto correspondente está; quanto menor, mais para baixo). Horizontalmente, os pontos que correspondem a empresas que não possuem estrutura de governaça completa estão à esquerda, e os das empresas que possuem estrutura completa estão à direita. As anotações do gráfico correspondem às informações que foram mencionadas no parágrafo anterior ao gráfico: 83% das empresas que possuem estrutura de governança completa apresentaram rentabilidade positiva, enquanto entre as que não possuem esse percentual é de 55%.">
         </figure> 
 
-        <p>A Lei 13.303/2016, em seu artigo 8°, prevê também a necessidade da publicação de cartas anuais de políticas públicas e governança coorporativa pelas estatais:</p>
 
         <p class="box-meio-texto">
             Elaboração de carta anual, subscrita pelos membros do Conselho de Administração, com a explicitação dos compromissos de consecução de objetivos de políticas públicas pela empresa pública, pela sociedade de economia mista e por suas subsidiárias, em atendimento ao interesse coletivo ou ao imperativo de segurança nacional que justificou a autorização para suas respectivas criações, com <strong>definição clara dos recursos a serem empregados para esse fim, bem como dos impactos econômico-financeiros da consecução desses objetivos, mensuráveis por meio de indicadores objetivos</strong>;
@@ -348,8 +349,7 @@
 
         <p>A Lei estabelece também que a carta anual deve ter ampla publicidade, e estar em linguagem clara e direta. Notem que ao exigir essa publicação, a Lei objetiva permitir que a sociedade possa acompanhar as ações das estatais, avaliar seu atendimento ao interesse coletivo e ao cumprimento das políticas públicas. Assim, a sociedade é capaz de agir como um agente adicional à estrutura de governança da estatal.</p>
 
-        <p>Na ficha básica da empresa você poderá encontrar o link para a carta anual das estatais para as quais a informação foi encaminhada pelos entes ou localizada pela STN nos sites das empresas. <a href="#vis-ficha-basica">ficha básica das empresas</a></p>
-
+    
         <h2>O estado acionista</h2>
 
         <p>Quais os resultados das empresas para o Estado Acionista?</p>
@@ -628,10 +628,11 @@
         </figure>     
 
         <nav class="links-versoes">
-            <a href="/v2019/">Versão 2019 (dados de 2018)</a>
-            <a href="/v2020/">Versão 2020 (dados de 2019)</a>
-            <a href="/v2021/">Versão 2021 (dados de 2020)</a>
-            <a href="/v2022/">Versão 2022 (dados de 2021)</a>
+            <a href="https://tesouro.github.io/empresas-estados/v2019/">Versão 2019 (dados de 2018)</a>
+            <a href="https://tesouro.github.io/empresas-estados/v2020/">Versão 2020 (dados de 2019)</a>
+            <a href="https://tesouro.github.io/empresas-estados/v2021/">Versão 2021 (dados de 2020)</a>
+            <a href="https://tesouro.github.io/empresas-estados/v2022/">Versão 2022 (dados de 2021)</a>
+            <a href="https://tesouro.github.io/empresas-estados/">Versão 2023 (dados de 2023)</a> 
         </nav>
 
     </section>
