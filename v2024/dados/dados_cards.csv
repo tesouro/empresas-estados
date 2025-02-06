@@ -1,128 +1,128 @@
 Nome_estado,setor,emp,dep,sit,capital,desp_investimento,lucros,link,indicio_dependencia,tipo_indicio
-Acre,OUTROS,Agência de Negócios do Estado do Acre,Dependente,ATIVA,3794518.84,0,-9049391.38,Site não disponível,sim,sim
-Acre,DESENVOLVIMENTO REGIONAL,Administradora da Zona de Processamento de Exportação do Acre,Dependente,ATIVA,0,0,0,Site não disponível,sim,sim
-Acre,FINANCEIRO,Banco do Estado do Acre,Dependente,EM LIQUIDAÇÃO,0,0,-2582761.78,Site não disponível,sim,sim
-Acre,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia de Armazéns e Entrepostos do Acre,Dependente,ATIVA,0,5560,678045.71,Site não disponível,sim,sim
-Acre,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia Industrial de Laticínios do Acre,Dependente,ATIVA,0,0,0,Site não disponível,sim,sim
-Acre,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Industrial do Acre,Dependente,ATIVA,0,0,0,Site não disponível,sim,sim
-Acre,OUTROS,Companhia de Colonização do Acre,Dependente,EM LIQUIDAÇÃO,0,0,14432.11,Site não disponível,sim,sim
-Acre,SANEAMENTO,Companhia de Saneamento do Acre,Dependente,ATIVA,0,0,580880.03,https://saneacre.ac.gov.br/relatorios-anuais-de-gestao/,sim,sim
-Acre,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Acre,Dependente,ATIVA,0,293569,3953141.14,Site não disponível,sim,sim
-Acre,DESENVOLVIMENTO REGIONAL,Companhia Agência de Desenvolvimento e Serviços Ambientais do Estado do Acre,Dependente,ATIVA,3397100,0,4922.18,https://cdsabusiness.com.br/,sim,sim
-Acre,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Processamento de Dados do Acre SA,Dependente,ATIVA,0,0,10173506.72,Site não disponível,sim,sim
-Acre,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Acre,Dependente,ATIVA,0,115200,167735.68,Site não disponível,sim,sim
-Alagoas,FINANCEIRO,Agência de Fomento de Alagoas,Dependente,ATIVA,0,0,-6442000,https://www.desenvolve-al.com.br/institucional/relatorios-da-administracao/,sim,sim
-Alagoas,FINANCEIRO,Banco do Estado de Alagoas SA,Dependente,EM LIQUIDAÇÃO,0,0,-4134931.27,Site não disponível,sim,sim
-Alagoas,GESTÃO DE ATIVOS,Companhia Alagoana de Recursos Humanos e Patrimoniais,Dependente,EM LIQUIDAÇÃO,16928865.24,0,0,Site não disponível,sim,sim
-Alagoas,GESTÃO DE ATIVOS,Laboratório Industrial Farmacêutico,Dependente,EM LIQUIDAÇÃO,-21306.48,0,0,Site não disponível,sim,sim
-Alagoas,GESTÃO DE ATIVOS,Serviços de Engenharia de Alagoas SA,Dependente,EM LIQUIDAÇÃO,0,0,0,Site não disponível,sim,sim
-Amapá,SANEAMENTO,Companhia de Água e Esgoto do Amapá,Dependente,ATIVA,0,0,1850796.08,https://caesa.portal.ap.gov.br/pagina/carta-de-servico,sim,sim
-Amazonas,TURISMO,Empresa Estadual de Turismo,Dependente,ATIVA,0,0,-613957.52,https://www.amazonastur.am.gov.br/wp-content/uploads/2023/02/Carta-de-Servicos-2023.pdf,sim,sim
-Amazonas,SANEAMENTO,Companhia de Saneamento do Amazonas,Dependente,ATIVA,0,4962151.34,-16353424.53,http://www.cosama.am.gov.br/,sim,sim
-Amazonas,DESENVOLVIMENTO REGIONAL,Agência de Desenvolvimento Sustentável do Amazonas,Dependente,ATIVA,0,0,514430.93,https://www.ads.am.gov.br/,sim,sim
-Bahia,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Bahia Pesca SA,Dependente,ATIVA,0,861350,1711832,https://www.ba.gov.br/bahiapesca/,sim,sim
-Bahia,MINERAÇÃO,Companhia Baiana de Pesquisa Mineral,Dependente,ATIVA,0,1668458.7,1803988.99,http://www.cbpm.ba.gov.br/transparencia/carta-anual-de-politicas-publicas-e-governanca-corporativa/,sim,sim
-Bahia,SANEAMENTO,Companhia de Engenharia Hídrica e de Saneamento da Bahia,Dependente,ATIVA,0,68633903.8,-396080.78,http://www.cerb.ba.gov.br/sites/www.cerb.ba.gov.br/files/a_cerb/nosso_papel/page/files/CARTA%20ANUAL%202022%20CERB.pdf,sim,sim
-Bahia,HABITAÇÃO E URBANIZAÇÃO,Companhia de Desenvolvimento Urbano do Estado da Bahia,Dependente,ATIVA,0,0,-7704420.99,https://www.conder.ba.gov.br/sites/default/files/2024-04/CARTA GOVERNANÇA 2024_0.pdf,sim,sim
-Bahia,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento e Ação Regional,Dependente,ATIVA,12549845.65,0,-1184296,https://www.car.ba.gov.br/,sim,sim
-Bahia,TRANSPORTE,Companhia de Transporte do Estado da Bahia,Dependente,ATIVA,22737270.41,19042532.36,-4215422.03,https://www.ba.gov.br/trilhos/,sim,sim
-Ceará,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Ceará,Dependente,EM LIQUIDAÇÃO,0,48895.08,-13663803.85,https://www.seplag.ce.gov.br/COHAB-CE/,sim,sim
-Ceará,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Ceará,Dependente,ATIVA,0,28068.92,-5041346.93,https://www.ematerce.ce.gov.br/,sim,sim
-Ceará,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Tecnologia da Informação do Ceará,Dependente,ATIVA,0,0,7808729,https://www.etice.ce.gov.br/cartas-anuais-de-politicas-publicas-e-governanca-corporativa/,sim,sim
-Distrito Federal,OUTROS,Companhia de Planejamento do Distrito Federal,Dependente,EM LIQUIDAÇÃO,0,0,-11812145.62,https://www.codeplan.df.gov.br/,sim,sim
-Distrito Federal,HABITAÇÃO E URBANIZAÇÃO,Companhia de Desenvolvimento Habitacional do Distrito Federal,Dependente,ATIVA,37970068.38,43555936.21,-1082217.66,https://www.codhab.df.gov.br/pagina/452,sim,sim
-Distrito Federal,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Distrito Federal,Dependente,ATIVA,0,1040816.14,-21394028.53,https://emater.df.gov.br/governanca-corporativa/,sim,sim
-Distrito Federal,TRANSPORTE,Companhia do Metropolitano do Distrito Federal,Dependente,ATIVA,2233538.6,13475701.06,87374621.19,https://metro.df.gov.br/?page_id=37077,sim,sim
-Distrito Federal,HABITAÇÃO E URBANIZAÇÃO,Companhia Urbanizadora da Nova Capital do Brasil,Dependente,ATIVA,0,0,14201543.51,https://www.novacap.df.gov.br/?s=carta+anual+de+politicas,sim,sim
-Distrito Federal,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Sociedade de Abastecimento de Brasília,Dependente,EM LIQUIDAÇÃO,0,0,-27521.87,Site não disponível,sim,sim
-Distrito Federal,TRANSPORTE,Sociedade de Transportes Coletivos de Brasília,Dependente,ATIVA,0,0,-1052684.46,https://www.tcb.df.gov.br/carta-anual-de-politicas-publicas-e-governanca-corporativa/,sim,sim
-Distrito Federal,GESTÃO DE ATIVOS,Empresa de Regularização de Terras Rurais,Dependente,ATIVA,45000,0,27553,https://www.etr.df.gov.br/,sim,sim
-Espiríto Santo,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Espírito Santo SA,Dependente,ATIVA,0,17198,0,https://ceasa.es.gov.br/governanca-corporativa,sim,sim
-Goiás,HABITAÇÃO E URBANIZAÇÃO,Agência Goiana de Habitação SA,Dependente,ATIVA,8877149.13,251617168.5,244352232.86,https://goias.gov.br/agehab/carta-anual-de-governanca-corporativa/,sim,sim
-Goiás,SAÚDE,Indústria Química do Estado de Goiás,Dependente,ATIVA,16516253.32,689095.62,-9891446.19,https://goias.gov.br/iquego/carta-anual-de-governanca-corporativa-2/,sim,sim
-Goiás,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Goiás Telecomunicações SA,Dependente,ATIVA,0,37531.82,413333.92,https://goias.gov.br/goiastelecom/carta-anual-de-governanca/,sim,sim
-Goiás,TRANSPORTE,Metrobus Transporte Coletivo SA,Dependente,ATIVA,0,0,7755375.9,https://goias.gov.br/metrobus/carta-anual-de-governanca-corporativa/,sim,sim
-Mato Grosso,GÁS E DERIVADOS,Companhia MatoGrossense de Gas,Dependente,ATIVA,0,0,0,https://mtgas.com.br/,sim,sim
-Mato Grosso,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa MatoGrossense de Tecnologia da Informação,Dependente,ATIVA,9399850.97,23193593.92,21781024.23,https://www.mti.mt.gov.br/cartas,sim,sim
-Mato Grosso,SANEAMENTO,Companhia de Saneamento do Estado de Mato Grosso,Dependente,EM LIQUIDAÇÃO,0,0,-16462956,Site não disponível,sim,sim
-Mato Grosso,MINERAÇÃO,Companhia Matogrossense de Mineração,Dependente,ATIVA,0,2354794.64,39947919,https://www.metamat.mt.gov.br/inicio,sim,sim
-Mato Grosso,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa MatoGrossense de Pesquisa Assistência Técnica e Extensão Rural,Dependente,ATIVA,0,8525934.44,0,https://www.empaer.mt.gov.br/,sim,sim
-Mato Grosso,GESTÃO DE ATIVOS,MT Participações e Projetos SA Holding,Dependente,ATIVA,1091200751.25,0,126747.17,https://www.mtpar.mt.gov.br/cartaanual,sim,sim
-Mato Grosso,TURISMO,MT Parques SA Subsidiaria,Dependente,ATIVA,0,0,0,https://www.mtpar.mt.gov.br/cartaanual,sim,sim
-Mato Grosso,PORTOS E HIDROVIAS,Terminal Portuário de Cáceres SA Subsidiaria,Dependente,ATIVA,0,0,0,https://www.mtpar.mt.gov.br/cartaanual,sim,sim
-Mato Grosso,GESTÃO DE ATIVOS,MT Par Concessões SA Subsidiaria,Dependente,ATIVA,0,0,0,https://www.mtpar.mt.gov.br/cartaanual,sim,sim
-Mato Grosso do Sul,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Serviços Agropecuários de MS,Dependente,EM LIQUIDAÇÃO,0,0,-88620147.24,Página da internet não localizada,sim,sim
-Mato Grosso do Sul,MINERAÇÃO,Empresa de Gestão de Recursos Minerais,Dependente,ATIVA,0,0,-25587.99,https://www.msmineral.ms.gov.br/,sim,sim
-Minas Gerais,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais,Dependente,ATIVA,0,25379778.12,291997.57,https://www.emater.mg.gov.br/download.do?id=87220,sim,sim
-Minas Gerais,COMUNICAÇÃO,Empresa Mineira de Comunicação Ltda,Dependente,ATIVA,0,0,-947277.85,https://emc.mg.gov.br/institucional/governanca/cartas/,sim,sim
-Minas Gerais,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária de Minas Gerais,Dependente,ATIVA,0,14341693.79,9243105.44,https://www.epamig.br/wp-content/uploads/2024/04/carta_de_governanca-2023.pdf,sim,sim
-Paraná,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Instituto de Tecnologia do Paraná,Dependente,ATIVA,0,78490.73,16720851.07,https://www.tecpar.br/Pagina/Governanca-Corporativa,sim,sim
-Paraná,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Paraná,Dependente,ATIVA,330798550.32,64316137.69,-36503583.93,https://www.cohapar.pr.gov.br/,sim,sim
-Paraíba,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa Estadual de Pesquisa Agropecuária,Dependente,EM LIQUIDAÇÃO,791511,0,-372219,Site não disponível,sim,sim
-Paraíba,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural da Paraíba,Dependente,EM LIQUIDAÇÃO,0,0,-635053.05,Site não disponível,sim,sim
-Paraíba,TURISMO,Empresa Paraibana de Turismo SA,Dependente,ATIVA,0,0,22003.17,https://www.pbtur.pb.gov.br/carta-anual-de-politicas-publicas-e-governanca/,sim,sim
-Paraíba,TURISMO,PBTUR Hotéis SA,Dependente,ATIVA,701977.56,0,-881123.05,https://www.pbtur.pb.gov.br/,sim,sim
-Paraíba,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Empresa Paraibana de Abastecimento e Serviços Agrícolas,Dependente,EM LIQUIDAÇÃO,0,0,-570458.36,Site não disponível,sim,sim
-Paraíba,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa Paraibana de Pesquisa Extensão Rural e Regularização Fundiária,Dependente,ATIVA,0,29470.2,822482.27,https://empaer.pb.gov.br/Sevicos,sim,sim
-Paraíba,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento da Paraíba,Dependente,ATIVA,0,0,4328096.29,http://www.cinep.pb.gov.br/portal/#,sim,sim
-Paraíba,MINERAÇÃO,Companhia de Desenvolvimento de Recursos Minerais da Paraíba,Dependente,EM LIQUIDAÇÃO,0,0,0,Site não disponível,sim,sim
-Paraíba,SAÚDE,Laboratório Industrial Farmacêutico do Estado da Paraíba SA,Dependente,ATIVA,0,0,-56623,https://lifesa.pb.gov.br/governanca-corporativa,sim,sim
-Paraíba,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação Popular,Dependente,ATIVA,0,33056452.65,-10232923.18,http://cehap.pb.gov.br/sitecehap/,sim,sim
-Pará,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Econômico do Pará,Dependente,ATIVA,0,1137437.52,900003.41,https://www.codec.pa.gov.br/sobre-a-cazbar/,sim,sim
-Pará,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Pará SA,Dependente,ATIVA,0,0,-2221724.62,http://www.ceasa.pa.gov.br/,sim,sim
-Pará,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Estado do Pará,Dependente,ATIVA,0,37102300.07,-2896871.29,http://www.cohab.pa.gov.br/node/1848,sim,sim
-Pará,PORTOS E HIDROVIAS,Companhia de Portos e Hidrovias do Estado do Pará,Dependente,ATIVA,0,0,22303905.65,https://cph.pa.gov.br/,sim,sim
-Pará,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural,Dependente,ATIVA,0,745763.79,8476939.73,https://www.emater.pa.gov.br/pt-br/carta-anual-de-politicas-publicas-e-governanca-corporativa,sim,sim
-Pará,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Processamento de Dados,Dependente,ATIVA,0,31355552.7,16621270.52,https://www.prodepa.pa.gov.br/quem-somos,sim,sim
-Pernambuco,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação e Obras,Dependente,ATIVA,0,73733079.75,12142611,https://www.cehab.pe.gov.br/carta-anual-de-politicas-publicas-e-governanca-corporativa,sim,sim
-Pernambuco,TRANSPORTE,Consórcio de Transportes da Região Metropolitana do Recife,Dependente,ATIVA,424300,81037.14,-16686128.74,https://www.granderecife.pe.gov.br/instrumentos-de-governanca/,sim,sim
-Pernambuco,TURISMO,Empresa de Turismo de Pernambuco Governador Eduardo Campos,Dependente,ATIVA,0,69851.8,-232765381.54,https://www.empetur.pe.gov.br/transparencia/governanca-corporativa/74-transparencia/1410-carta-anual-sobre-politicas-publicas-e-governanca-corporativa,sim,sim
-Pernambuco,COMUNICAÇÃO,Empresa Pernambuco de Comunicação SA,Dependente,ATIVA,0,58684,121231,https://www.epc.pe.gov.br/documentos/,sim,sim
-Pernambuco,TRANSPORTE,Empresa Pernambucana de Transporte Coletivo Intermunicipal,Dependente,ATIVA,0,3344179.13,183586,https://www.epti.pe.gov.br/carta-anual-de-politicas-publicas-e-governanca-corporativa/,sim,sim
-Pernambuco,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Instituto Agronômico de Pernambuco,Dependente,ATIVA,0,250562.35,-8747345,https://site.ipa.br/transparencia/,sim,sim
-Pernambuco,GESTÃO DE ATIVOS,Pernambuco Participações e Investimentos SA,Dependente,ATIVA,3411145.63,9015.39,6934291.61,https://www.perpart.pe.gov.br/transparencia/governanca/politicas-e-regulamentos,sim,sim
-Piauí,TRANSPORTE,Companhia Ferroviária e Logística do Piauí,Dependente,ATIVA,0,22411260,1690000,Site não disponível,sim,sim
-Piauí,GESTÃO DE ATIVOS,Empresa de Gestão de Recursos do Estado do Piauí SA,Dependente,ATIVA,132327076.71,0,376601.21,https://portal.pi.gov.br/emgerpi/,sim,sim
-Rio Grande do Norte,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação e Desenvolvimento Urbano,Dependente,ATIVA,11746335.11,5377329.84,0,http://www.cehab.rn.gov.br/Index.asp,sim,sim
-Rio Grande do Norte,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Rio Grande do Norte SA,Dependente,ATIVA,0,545712,502468,https://www.ceasa.rn.gov.br/,sim,sim
-Rio Grande do Norte,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária do RN,Dependente,ATIVA,202013,0,-8389887,http://www.emparn.rn.gov.br/Index.asp,sim,sim
-Rio Grande do Norte,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Companhia de Processamento de Dados do RN,Dependente,ATIVA,0,0,-124778,http://www.datanorte.rn.gov.br/Conteudo.asp?TRAN=ITEM&TARG=334261&ACT=&PAGE=0&PARM=&LBL=Transpar%EAncia,sim,sim
-Rio Grande do Norte,TURISMO,Empresa Potiguar de Promoção Turística SA,Dependente,ATIVA,200000,0,-266627678,https://emprotur.setur.rn.gov.br/storage/documentos/documentos/a72997d84ca675d99b719abb733f669f.pdf,sim,sim
-Rio de Janeiro,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Estado do Rio de Janeiro,Dependente,ATIVA,0,1647044.67,-79258.23,https://www.rj.gov.br/emater/,sim,sim
-Rio de Janeiro,TRANSPORTE,Companhia Fluminense de Trens Urbanos,Dependente,EM LIQUIDAÇÃO,0,0,-27065803.1,Site não disponível,sim,sim
-Rio de Janeiro,TRANSPORTE,Companhia do Metropolitano do Rio de Janeiro,Dependente,EM LIQUIDAÇÃO,0,0,-10390211.48,Site não disponível,sim,sim
-Rio de Janeiro,SAÚDE,Instituto Vital Brazil SA,Dependente,ATIVA,0,303874.26,12035561.66,https://www.rj.gov.br/vitalbrazil/,sim,sim
-Rio de Janeiro,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária do Estado do Rio de Janeiro,Dependente,ATIVA,0,3925485.25,1349619.17,https://www.rj.gov.br/pesagro/estatutosocial,sim,sim
-Rio de Janeiro,TRANSPORTE,Companhia Estadual de Engenharia de Transportes e Logística,Dependente,ATIVA,0,0,179441245.03,https://www.rj.gov.br/central/node/705,sim,sim
-Rio de Janeiro,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação do Rio de Janeiro,Dependente,ATIVA,0,412341229.12,-5707917.73,https://www.rj.gov.br/cehab/,sim,sim
-Rio de Janeiro,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia de Armazéns e Silos do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,-93730.15,Site não disponível,sim,sim
-Rio de Janeiro,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Estado do Rio de Janeiro SA,Dependente,ATIVA,0,6527372.68,14137383,Site não disponível,sim,sim
-Rio de Janeiro,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Industrial do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,1936628.08,https://www.codin.rj.gov.br/_files/ugd/c74752_057e39a3af2345ba875bbdd5a9389a38.pdf?index=true,sim,sim
-Rio de Janeiro,TRANSPORTE,Companhia de Transportes Sobre Trilhos do RJ,Dependente,ATIVA,0,0,-7332341000,https://www.rj.gov.br/riotrilhos/carta_politica_publica,sim,sim
-Rio de Janeiro,TURISMO,Companhia de Turismo do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,902110.32,https://www.turisrio.rj.gov.br/default_institucional.asp,sim,sim
-Rio de Janeiro,HABITAÇÃO E URBANIZAÇÃO,Empresa de Obras Públicas do Estado do Rio de Janeiro,Dependente,ATIVA,0,1245319,-6756573.89,https://www.emop.rj.gov.br/,sim,sim
-Rio de Janeiro,TRANSPORTE,Companhia de Transportes Coletivos do Estado do Rio de Janeiro  Em Liquidação,Dependente,EM LIQUIDAÇÃO,0,0,8570.67,Site não disponível,sim,sim
-Rio de Janeiro,TRANSPORTE,Companhia de Desenvolvimento Rodoviário e Terminais do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,-22636334.49,https://www.rj.gov.br/coderte/,sim,sim
-Roraima,FINANCEIRO,Agência de Fomento do Estado de Roraima SA,Dependente,ATIVA,0,3625000,-2973722.17,https://desenvolve.rr.gov.br/,sim,sim
-Roraima,ENERGIA,Companhia Energética de Roraima,Dependente,EM LIQUIDAÇÃO,0,0,3496702.83,https://www.imprensaoficial.rr.gov.br/app/_visualizar-doe/,sim,sim
-Roraima,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento de Roraima,Dependente,ATIVA,0,0,-7396225.11,https://codesaima.rr.gov.br/,sim,sim
-Roraima,COMUNICAÇÃO,Rádio Roraima,Dependente,ATIVA,0,95178,-1284993.77,https://www.radiororaima.com.br/,sim,sim
-Santa Catarina,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Estado de Santa Catarina,Dependente,EM LIQUIDAÇÃO,0,0,-736199,http://www.cohab.sc.gov.br/,sim,sim
-Santa Catarina,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Companhia Integrada de Desenvolvimento Agrícola de Santa Catarina,Dependente,ATIVA,6800000,3392120.74,1548244.87,https://www.cidasc.sc.gov.br/wp-content/uploads/2023/04/CAGC-2023.docx-1.pdf,sim,sim
-Santa Catarina,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária e Extensão Rural de Santa Catarina,Dependente,ATIVA,0,17097087,-118261,https://transparencia.epagri.sc.gov.br/?page_id=919,sim,sim
-Santa Catarina,TURISMO,Santa Catarina Turismo SA,Dependente,EM LIQUIDAÇÃO,1165848,0,-268452,https://www.scturismo.com.br/orgaos/,sim,sim
-Sergipe,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação e Obras Públicas,Dependente,ATIVA,0,81667.56,-1949452.43,https://cehop.se.gov.br/,sim,sim
-Sergipe,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Econômico de Sergipe,Dependente,ATIVA,0,2954955,-3267193.41,https://codise.se.gov.br/carta-anual-politicas-publicas/,sim,sim
-Sergipe,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia de Desenvolvimento de Recursos Hídricos e Irrigação de Sergipe,Dependente,ATIVA,0,0,-433819.39,https://coderse.se.gov.br/,sim,sim
-Sergipe,DESENVOLVIMENTO REGIONAL,Empresa de Desenvolvimento Sustentável do Estado de Sergipe,Dependente,ATIVA,0,0,-168763.76,https://www.pronese.se.gov.br/transparencia,sim,sim
-Sergipe,TURISMO,Empresa Sergipana de Turismo SA,Dependente,ATIVA,0,0,-2036750.62,https://www.se.gov.br/emsetur/emsetur_transparencia,sim,sim
-Sergipe,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa Sergipana de Tecnologia da Informação,Dependente,ATIVA,0,0,651065.87,https://emgetis.se.gov.br/,sim,sim
-Sergipe,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Desenvolvimento Agropecuário de Sergipe,Dependente,ATIVA,0,1369643.83,1563239.9,https://www.emdagro.se.gov.br,sim,sim
-Sergipe,DESENVOLVIMENTO REGIONAL,Zona de Processamento de Exportação de Sergipe,Dependente,ATIVA,416191.28,0,911.93,https://www.abrazpe.org.br/index.php/zpesbrasil/,sim,sim
-São Paulo,OUTROS,Companhia Ambiental do Estado de São Paulo,Dependente,ATIVA,0,34254504,-22938360.73,https://cetesb.sp.gov.br/balancos-patrimoniais,sim,sim
-São Paulo,TRANSPORTE,Companhia Paulista de Trens Metropolitanos,Dependente,ATIVA,0,528266615.93,-851709191.69,https://www.cptm.sp.gov.br/esg-consciente/Governanca/BalancosDemonstrativos/Relat%C3%B3rio%20Integrado%20CPTM%202023.zip,sim,sim
-São Paulo,PORTOS E HIDROVIAS,Companhia Docas de São Sebastião,Dependente,ATIVA,292152130.89,6115681.08,-9640282,https://portoss.sp.gov.br/home/transparencia/governanca/,sim,sim
-São Paulo,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Instituto de Pesquisas Tecnológicas do Estado de São Paulo SA,Dependente,ATIVA,0,13539378.48,-13531993.58,https://ipt.br/wp-content/uploads/2024/03/Carta-Anual-de-Governanca-Corporativa-IPT-2023.pdf,sim,sim
+Acre,OUTROS,Agência de Negócios do Estado do Acre,Dependente,ATIVA,3794518.84,0,-9049391.38,Site não disponível,não,NA
+Acre,DESENVOLVIMENTO REGIONAL,Administradora da Zona de Processamento de Exportação do Acre,Dependente,ATIVA,0,0,0,Site não disponível,não,NA
+Acre,FINANCEIRO,Banco do Estado do Acre,Dependente,EM LIQUIDAÇÃO,0,0,-2582761.78,Site não disponível,não,NA
+Acre,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia de Armazéns e Entrepostos do Acre,Dependente,ATIVA,0,5560,678045.71,Site não disponível,não,NA
+Acre,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia Industrial de Laticínios do Acre,Dependente,ATIVA,0,0,0,Site não disponível,não,NA
+Acre,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Industrial do Acre,Dependente,ATIVA,0,0,0,Site não disponível,não,NA
+Acre,OUTROS,Companhia de Colonização do Acre,Dependente,EM LIQUIDAÇÃO,0,0,14432.11,Site não disponível,não,NA
+Acre,SANEAMENTO,Companhia de Saneamento do Acre,Dependente,ATIVA,0,0,580880.03,https://saneacre.ac.gov.br/relatorios-anuais-de-gestao/,não,NA
+Acre,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Acre,Dependente,ATIVA,0,293569,3953141.14,Site não disponível,não,NA
+Acre,DESENVOLVIMENTO REGIONAL,Companhia Agência de Desenvolvimento e Serviços Ambientais do Estado do Acre,Dependente,ATIVA,3397100,0,4922.18,https://cdsabusiness.com.br/,não,NA
+Acre,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Processamento de Dados do Acre SA,Dependente,ATIVA,0,0,10173506.72,Site não disponível,não,NA
+Acre,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Acre,Dependente,ATIVA,0,115200,167735.68,Site não disponível,não,NA
+Alagoas,FINANCEIRO,Agência de Fomento de Alagoas,Dependente,ATIVA,0,0,-6442000,https://www.desenvolve-al.com.br/institucional/relatorios-da-administracao/,não,NA
+Alagoas,FINANCEIRO,Banco do Estado de Alagoas SA,Dependente,EM LIQUIDAÇÃO,0,0,-4134931.27,Site não disponível,não,NA
+Alagoas,GESTÃO DE ATIVOS,Companhia Alagoana de Recursos Humanos e Patrimoniais,Dependente,EM LIQUIDAÇÃO,16928865.24,0,0,Site não disponível,não,NA
+Alagoas,GESTÃO DE ATIVOS,Laboratório Industrial Farmacêutico,Dependente,EM LIQUIDAÇÃO,-21306.48,0,0,Site não disponível,não,NA
+Alagoas,GESTÃO DE ATIVOS,Serviços de Engenharia de Alagoas SA,Dependente,EM LIQUIDAÇÃO,0,0,0,Site não disponível,não,NA
+Amapá,SANEAMENTO,Companhia de Água e Esgoto do Amapá,Dependente,ATIVA,0,0,1850796.08,https://caesa.portal.ap.gov.br/pagina/carta-de-servico,não,NA
+Amazonas,TURISMO,Empresa Estadual de Turismo,Dependente,ATIVA,0,0,-613957.52,https://www.amazonastur.am.gov.br/wp-content/uploads/2023/02/Carta-de-Servicos-2023.pdf,não,NA
+Amazonas,SANEAMENTO,Companhia de Saneamento do Amazonas,Dependente,ATIVA,0,4962151.34,-16353424.53,http://www.cosama.am.gov.br/,não,NA
+Amazonas,DESENVOLVIMENTO REGIONAL,Agência de Desenvolvimento Sustentável do Amazonas,Dependente,ATIVA,0,0,514430.93,https://www.ads.am.gov.br/,não,NA
+Bahia,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Bahia Pesca SA,Dependente,ATIVA,0,861350,1711832,https://www.ba.gov.br/bahiapesca/,não,NA
+Bahia,MINERAÇÃO,Companhia Baiana de Pesquisa Mineral,Dependente,ATIVA,0,1668458.7,1803988.99,http://www.cbpm.ba.gov.br/transparencia/carta-anual-de-politicas-publicas-e-governanca-corporativa/,não,NA
+Bahia,SANEAMENTO,Companhia de Engenharia Hídrica e de Saneamento da Bahia,Dependente,ATIVA,0,68633903.8,-396080.78,http://www.cerb.ba.gov.br/sites/www.cerb.ba.gov.br/files/a_cerb/nosso_papel/page/files/CARTA%20ANUAL%202022%20CERB.pdf,não,NA
+Bahia,HABITAÇÃO E URBANIZAÇÃO,Companhia de Desenvolvimento Urbano do Estado da Bahia,Dependente,ATIVA,0,0,-7704420.99,https://www.conder.ba.gov.br/sites/default/files/2024-04/CARTA GOVERNANÇA 2024_0.pdf,não,NA
+Bahia,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento e Ação Regional,Dependente,ATIVA,12549845.65,0,-1184296,https://www.car.ba.gov.br/,não,NA
+Bahia,TRANSPORTE,Companhia de Transporte do Estado da Bahia,Dependente,ATIVA,22737270.41,19042532.36,-4215422.03,https://www.ba.gov.br/trilhos/,não,NA
+Ceará,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Ceará,Dependente,EM LIQUIDAÇÃO,0,48895.08,-13663803.85,https://www.seplag.ce.gov.br/COHAB-CE/,não,NA
+Ceará,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Ceará,Dependente,ATIVA,0,28068.92,-5041346.93,https://www.ematerce.ce.gov.br/,não,NA
+Ceará,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Tecnologia da Informação do Ceará,Dependente,ATIVA,0,0,7808729,https://www.etice.ce.gov.br/cartas-anuais-de-politicas-publicas-e-governanca-corporativa/,não,NA
+Distrito Federal,OUTROS,Companhia de Planejamento do Distrito Federal,Dependente,EM LIQUIDAÇÃO,0,0,-11812145.62,https://www.codeplan.df.gov.br/,não,NA
+Distrito Federal,HABITAÇÃO E URBANIZAÇÃO,Companhia de Desenvolvimento Habitacional do Distrito Federal,Dependente,ATIVA,37970068.38,43555936.21,-1082217.66,https://www.codhab.df.gov.br/pagina/452,não,NA
+Distrito Federal,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Distrito Federal,Dependente,ATIVA,0,1040816.14,-21394028.53,https://emater.df.gov.br/governanca-corporativa/,não,NA
+Distrito Federal,TRANSPORTE,Companhia do Metropolitano do Distrito Federal,Dependente,ATIVA,2233538.6,13475701.06,87374621.19,https://metro.df.gov.br/?page_id=37077,não,NA
+Distrito Federal,HABITAÇÃO E URBANIZAÇÃO,Companhia Urbanizadora da Nova Capital do Brasil,Dependente,ATIVA,0,0,14201543.51,https://www.novacap.df.gov.br/?s=carta+anual+de+politicas,não,NA
+Distrito Federal,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Sociedade de Abastecimento de Brasília,Dependente,EM LIQUIDAÇÃO,0,0,-27521.87,Site não disponível,não,NA
+Distrito Federal,TRANSPORTE,Sociedade de Transportes Coletivos de Brasília,Dependente,ATIVA,0,0,-1052684.46,https://www.tcb.df.gov.br/carta-anual-de-politicas-publicas-e-governanca-corporativa/,não,NA
+Distrito Federal,GESTÃO DE ATIVOS,Empresa de Regularização de Terras Rurais,Dependente,ATIVA,45000,0,27553,https://www.etr.df.gov.br/,não,NA
+Espiríto Santo,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Espírito Santo SA,Dependente,ATIVA,0,17198,0,https://ceasa.es.gov.br/governanca-corporativa,não,NA
+Goiás,HABITAÇÃO E URBANIZAÇÃO,Agência Goiana de Habitação SA,Dependente,ATIVA,8877149.13,251617168.5,244352232.86,https://goias.gov.br/agehab/carta-anual-de-governanca-corporativa/,não,NA
+Goiás,SAÚDE,Indústria Química do Estado de Goiás,Dependente,ATIVA,16516253.32,689095.62,-9891446.19,https://goias.gov.br/iquego/carta-anual-de-governanca-corporativa-2/,não,NA
+Goiás,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Goiás Telecomunicações SA,Dependente,ATIVA,0,37531.82,413333.92,https://goias.gov.br/goiastelecom/carta-anual-de-governanca/,não,NA
+Goiás,TRANSPORTE,Metrobus Transporte Coletivo SA,Dependente,ATIVA,0,0,7755375.9,https://goias.gov.br/metrobus/carta-anual-de-governanca-corporativa/,não,NA
+Mato Grosso,GÁS E DERIVADOS,Companhia MatoGrossense de Gas,Dependente,ATIVA,0,0,0,https://mtgas.com.br/,não,NA
+Mato Grosso,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa MatoGrossense de Tecnologia da Informação,Dependente,ATIVA,9399850.97,23193593.92,21781024.23,https://www.mti.mt.gov.br/cartas,não,NA
+Mato Grosso,SANEAMENTO,Companhia de Saneamento do Estado de Mato Grosso,Dependente,EM LIQUIDAÇÃO,0,0,-16462956,Site não disponível,não,NA
+Mato Grosso,MINERAÇÃO,Companhia Matogrossense de Mineração,Dependente,ATIVA,0,2354794.64,39947919,https://www.metamat.mt.gov.br/inicio,não,NA
+Mato Grosso,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa MatoGrossense de Pesquisa Assistência Técnica e Extensão Rural,Dependente,ATIVA,0,8525934.44,0,https://www.empaer.mt.gov.br/,não,NA
+Mato Grosso,GESTÃO DE ATIVOS,MT Participações e Projetos SA Holding,Dependente,ATIVA,1091200751.25,0,126747.17,https://www.mtpar.mt.gov.br/cartaanual,não,NA
+Mato Grosso,TURISMO,MT Parques SA Subsidiaria,Dependente,ATIVA,0,0,0,https://www.mtpar.mt.gov.br/cartaanual,não,NA
+Mato Grosso,PORTOS E HIDROVIAS,Terminal Portuário de Cáceres SA Subsidiaria,Dependente,ATIVA,0,0,0,https://www.mtpar.mt.gov.br/cartaanual,não,NA
+Mato Grosso,GESTÃO DE ATIVOS,MT Par Concessões SA Subsidiaria,Dependente,ATIVA,0,0,0,https://www.mtpar.mt.gov.br/cartaanual,não,NA
+Mato Grosso do Sul,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Serviços Agropecuários de MS,Dependente,EM LIQUIDAÇÃO,0,0,-88620147.24,Página da internet não localizada,não,NA
+Mato Grosso do Sul,MINERAÇÃO,Empresa de Gestão de Recursos Minerais,Dependente,ATIVA,0,0,-25587.99,https://www.msmineral.ms.gov.br/,não,NA
+Minas Gerais,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais,Dependente,ATIVA,0,25379778.12,291997.57,https://www.emater.mg.gov.br/download.do?id=87220,não,NA
+Minas Gerais,COMUNICAÇÃO,Empresa Mineira de Comunicação Ltda,Dependente,ATIVA,0,0,-947277.85,https://emc.mg.gov.br/institucional/governanca/cartas/,não,NA
+Minas Gerais,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária de Minas Gerais,Dependente,ATIVA,0,14341693.79,9243105.44,https://www.epamig.br/wp-content/uploads/2024/04/carta_de_governanca-2023.pdf,não,NA
+Paraná,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Instituto de Tecnologia do Paraná,Dependente,ATIVA,0,78490.73,16720851.07,https://www.tecpar.br/Pagina/Governanca-Corporativa,não,NA
+Paraná,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Paraná,Dependente,ATIVA,330798550.32,64316137.69,-36503583.93,https://www.cohapar.pr.gov.br/,não,NA
+Paraíba,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa Estadual de Pesquisa Agropecuária,Dependente,EM LIQUIDAÇÃO,791511,0,-372219,Site não disponível,não,NA
+Paraíba,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural da Paraíba,Dependente,EM LIQUIDAÇÃO,0,0,-635053.05,Site não disponível,não,NA
+Paraíba,TURISMO,Empresa Paraibana de Turismo SA,Dependente,ATIVA,0,0,22003.17,https://www.pbtur.pb.gov.br/carta-anual-de-politicas-publicas-e-governanca/,não,NA
+Paraíba,TURISMO,PBTUR Hotéis SA,Dependente,ATIVA,701977.56,0,-881123.05,https://www.pbtur.pb.gov.br/,não,NA
+Paraíba,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Empresa Paraibana de Abastecimento e Serviços Agrícolas,Dependente,EM LIQUIDAÇÃO,0,0,-570458.36,Site não disponível,não,NA
+Paraíba,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa Paraibana de Pesquisa Extensão Rural e Regularização Fundiária,Dependente,ATIVA,0,29470.2,822482.27,https://empaer.pb.gov.br/Sevicos,não,NA
+Paraíba,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento da Paraíba,Dependente,ATIVA,0,0,4328096.29,http://www.cinep.pb.gov.br/portal/#,não,NA
+Paraíba,MINERAÇÃO,Companhia de Desenvolvimento de Recursos Minerais da Paraíba,Dependente,EM LIQUIDAÇÃO,0,0,0,Site não disponível,não,NA
+Paraíba,SAÚDE,Laboratório Industrial Farmacêutico do Estado da Paraíba SA,Dependente,ATIVA,0,0,-56623,https://lifesa.pb.gov.br/governanca-corporativa,não,NA
+Paraíba,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação Popular,Dependente,ATIVA,0,33056452.65,-10232923.18,http://cehap.pb.gov.br/sitecehap/,não,NA
+Pará,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Econômico do Pará,Dependente,ATIVA,0,1137437.52,900003.41,https://www.codec.pa.gov.br/sobre-a-cazbar/,não,NA
+Pará,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Pará SA,Dependente,ATIVA,0,0,-2221724.62,http://www.ceasa.pa.gov.br/,não,NA
+Pará,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Estado do Pará,Dependente,ATIVA,0,37102300.07,-2896871.29,http://www.cohab.pa.gov.br/node/1848,não,NA
+Pará,PORTOS E HIDROVIAS,Companhia de Portos e Hidrovias do Estado do Pará,Dependente,ATIVA,0,0,22303905.65,https://cph.pa.gov.br/,não,NA
+Pará,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural,Dependente,ATIVA,0,745763.79,8476939.73,https://www.emater.pa.gov.br/pt-br/carta-anual-de-politicas-publicas-e-governanca-corporativa,não,NA
+Pará,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Processamento de Dados,Dependente,ATIVA,0,31355552.7,16621270.52,https://www.prodepa.pa.gov.br/quem-somos,não,NA
+Pernambuco,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação e Obras,Dependente,ATIVA,0,73733079.75,12142611,https://www.cehab.pe.gov.br/carta-anual-de-politicas-publicas-e-governanca-corporativa,não,NA
+Pernambuco,TRANSPORTE,Consórcio de Transportes da Região Metropolitana do Recife,Dependente,ATIVA,424300,81037.14,-16686128.74,https://www.granderecife.pe.gov.br/instrumentos-de-governanca/,não,NA
+Pernambuco,TURISMO,Empresa de Turismo de Pernambuco Governador Eduardo Campos,Dependente,ATIVA,0,69851.8,-232765381.54,https://www.empetur.pe.gov.br/transparencia/governanca-corporativa/74-transparencia/1410-carta-anual-sobre-politicas-publicas-e-governanca-corporativa,não,NA
+Pernambuco,COMUNICAÇÃO,Empresa Pernambuco de Comunicação SA,Dependente,ATIVA,0,58684,121231,https://www.epc.pe.gov.br/documentos/,não,NA
+Pernambuco,TRANSPORTE,Empresa Pernambucana de Transporte Coletivo Intermunicipal,Dependente,ATIVA,0,3344179.13,183586,https://www.epti.pe.gov.br/carta-anual-de-politicas-publicas-e-governanca-corporativa/,não,NA
+Pernambuco,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Instituto Agronômico de Pernambuco,Dependente,ATIVA,0,250562.35,-8747345,https://site.ipa.br/transparencia/,não,NA
+Pernambuco,GESTÃO DE ATIVOS,Pernambuco Participações e Investimentos SA,Dependente,ATIVA,3411145.63,9015.39,6934291.61,https://www.perpart.pe.gov.br/transparencia/governanca/politicas-e-regulamentos,não,NA
+Piauí,TRANSPORTE,Companhia Ferroviária e Logística do Piauí,Dependente,ATIVA,0,22411260,1690000,Site não disponível,não,NA
+Piauí,GESTÃO DE ATIVOS,Empresa de Gestão de Recursos do Estado do Piauí SA,Dependente,ATIVA,132327076.71,0,376601.21,https://portal.pi.gov.br/emgerpi/,não,NA
+Rio Grande do Norte,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação e Desenvolvimento Urbano,Dependente,ATIVA,11746335.11,5377329.84,0,http://www.cehab.rn.gov.br/Index.asp,não,NA
+Rio Grande do Norte,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Rio Grande do Norte SA,Dependente,ATIVA,0,545712,502468,https://www.ceasa.rn.gov.br/,não,NA
+Rio Grande do Norte,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária do RN,Dependente,ATIVA,202013,0,-8389887,http://www.emparn.rn.gov.br/Index.asp,não,NA
+Rio Grande do Norte,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Companhia de Processamento de Dados do RN,Dependente,ATIVA,0,0,-124778,http://www.datanorte.rn.gov.br/Conteudo.asp?TRAN=ITEM&TARG=334261&ACT=&PAGE=0&PARM=&LBL=Transpar%EAncia,não,NA
+Rio Grande do Norte,TURISMO,Empresa Potiguar de Promoção Turística SA,Dependente,ATIVA,200000,0,-266627678,https://emprotur.setur.rn.gov.br/storage/documentos/documentos/a72997d84ca675d99b719abb733f669f.pdf,não,NA
+Rio de Janeiro,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Assistência Técnica e Extensão Rural do Estado do Rio de Janeiro,Dependente,ATIVA,0,1647044.67,-79258.23,https://www.rj.gov.br/emater/,não,NA
+Rio de Janeiro,TRANSPORTE,Companhia Fluminense de Trens Urbanos,Dependente,EM LIQUIDAÇÃO,0,0,-27065803.1,Site não disponível,não,NA
+Rio de Janeiro,TRANSPORTE,Companhia do Metropolitano do Rio de Janeiro,Dependente,EM LIQUIDAÇÃO,0,0,-10390211.48,Site não disponível,não,NA
+Rio de Janeiro,SAÚDE,Instituto Vital Brazil SA,Dependente,ATIVA,0,303874.26,12035561.66,https://www.rj.gov.br/vitalbrazil/,não,NA
+Rio de Janeiro,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária do Estado do Rio de Janeiro,Dependente,ATIVA,0,3925485.25,1349619.17,https://www.rj.gov.br/pesagro/estatutosocial,não,NA
+Rio de Janeiro,TRANSPORTE,Companhia Estadual de Engenharia de Transportes e Logística,Dependente,ATIVA,0,0,179441245.03,https://www.rj.gov.br/central/node/705,não,NA
+Rio de Janeiro,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação do Rio de Janeiro,Dependente,ATIVA,0,412341229.12,-5707917.73,https://www.rj.gov.br/cehab/,não,NA
+Rio de Janeiro,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia de Armazéns e Silos do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,-93730.15,Site não disponível,não,NA
+Rio de Janeiro,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Centrais de Abastecimento do Estado do Rio de Janeiro SA,Dependente,ATIVA,0,6527372.68,14137383,Site não disponível,não,NA
+Rio de Janeiro,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Industrial do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,1936628.08,https://www.codin.rj.gov.br/_files/ugd/c74752_057e39a3af2345ba875bbdd5a9389a38.pdf?index=true,não,NA
+Rio de Janeiro,TRANSPORTE,Companhia de Transportes Sobre Trilhos do RJ,Dependente,ATIVA,0,0,-7332341000,https://www.rj.gov.br/riotrilhos/carta_politica_publica,não,NA
+Rio de Janeiro,TURISMO,Companhia de Turismo do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,902110.32,https://www.turisrio.rj.gov.br/default_institucional.asp,não,NA
+Rio de Janeiro,HABITAÇÃO E URBANIZAÇÃO,Empresa de Obras Públicas do Estado do Rio de Janeiro,Dependente,ATIVA,0,1245319,-6756573.89,https://www.emop.rj.gov.br/,não,NA
+Rio de Janeiro,TRANSPORTE,Companhia de Transportes Coletivos do Estado do Rio de Janeiro  Em Liquidação,Dependente,EM LIQUIDAÇÃO,0,0,8570.67,Site não disponível,não,NA
+Rio de Janeiro,TRANSPORTE,Companhia de Desenvolvimento Rodoviário e Terminais do Estado do Rio de Janeiro,Dependente,ATIVA,0,0,-22636334.49,https://www.rj.gov.br/coderte/,não,NA
+Roraima,FINANCEIRO,Agência de Fomento do Estado de Roraima SA,Dependente,ATIVA,0,3625000,-2973722.17,https://desenvolve.rr.gov.br/,não,NA
+Roraima,ENERGIA,Companhia Energética de Roraima,Dependente,EM LIQUIDAÇÃO,0,0,3496702.83,https://www.imprensaoficial.rr.gov.br/app/_visualizar-doe/,não,NA
+Roraima,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento de Roraima,Dependente,ATIVA,0,0,-7396225.11,https://codesaima.rr.gov.br/,não,NA
+Roraima,COMUNICAÇÃO,Rádio Roraima,Dependente,ATIVA,0,95178,-1284993.77,https://www.radiororaima.com.br/,não,NA
+Santa Catarina,HABITAÇÃO E URBANIZAÇÃO,Companhia de Habitação do Estado de Santa Catarina,Dependente,EM LIQUIDAÇÃO,0,0,-736199,http://www.cohab.sc.gov.br/,não,NA
+Santa Catarina,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Companhia Integrada de Desenvolvimento Agrícola de Santa Catarina,Dependente,ATIVA,6800000,3392120.74,1548244.87,https://www.cidasc.sc.gov.br/wp-content/uploads/2023/04/CAGC-2023.docx-1.pdf,não,NA
+Santa Catarina,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Pesquisa Agropecuária e Extensão Rural de Santa Catarina,Dependente,ATIVA,0,17097087,-118261,https://transparencia.epagri.sc.gov.br/?page_id=919,não,NA
+Santa Catarina,TURISMO,Santa Catarina Turismo SA,Dependente,EM LIQUIDAÇÃO,1165848,0,-268452,https://www.scturismo.com.br/orgaos/,não,NA
+Sergipe,HABITAÇÃO E URBANIZAÇÃO,Companhia Estadual de Habitação e Obras Públicas,Dependente,ATIVA,0,81667.56,-1949452.43,https://cehop.se.gov.br/,não,NA
+Sergipe,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento Econômico de Sergipe,Dependente,ATIVA,0,2954955,-3267193.41,https://codise.se.gov.br/carta-anual-politicas-publicas/,não,NA
+Sergipe,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia de Desenvolvimento de Recursos Hídricos e Irrigação de Sergipe,Dependente,ATIVA,0,0,-433819.39,https://coderse.se.gov.br/,não,NA
+Sergipe,DESENVOLVIMENTO REGIONAL,Empresa de Desenvolvimento Sustentável do Estado de Sergipe,Dependente,ATIVA,0,0,-168763.76,https://www.pronese.se.gov.br/transparencia,não,NA
+Sergipe,TURISMO,Empresa Sergipana de Turismo SA,Dependente,ATIVA,0,0,-2036750.62,https://www.se.gov.br/emsetur/emsetur_transparencia,não,NA
+Sergipe,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa Sergipana de Tecnologia da Informação,Dependente,ATIVA,0,0,651065.87,https://emgetis.se.gov.br/,não,NA
+Sergipe,PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA,Empresa de Desenvolvimento Agropecuário de Sergipe,Dependente,ATIVA,0,1369643.83,1563239.9,https://www.emdagro.se.gov.br,não,NA
+Sergipe,DESENVOLVIMENTO REGIONAL,Zona de Processamento de Exportação de Sergipe,Dependente,ATIVA,416191.28,0,911.93,https://www.abrazpe.org.br/index.php/zpesbrasil/,não,NA
+São Paulo,OUTROS,Companhia Ambiental do Estado de São Paulo,Dependente,ATIVA,0,34254504,-22938360.73,https://cetesb.sp.gov.br/balancos-patrimoniais,não,NA
+São Paulo,TRANSPORTE,Companhia Paulista de Trens Metropolitanos,Dependente,ATIVA,0,528266615.93,-851709191.69,https://www.cptm.sp.gov.br/esg-consciente/Governanca/BalancosDemonstrativos/Relat%C3%B3rio%20Integrado%20CPTM%202023.zip,não,NA
+São Paulo,PORTOS E HIDROVIAS,Companhia Docas de São Sebastião,Dependente,ATIVA,292152130.89,6115681.08,-9640282,https://portoss.sp.gov.br/home/transparencia/governanca/,não,NA
+São Paulo,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Instituto de Pesquisas Tecnológicas do Estado de São Paulo SA,Dependente,ATIVA,0,13539378.48,-13531993.58,https://ipt.br/wp-content/uploads/2024/03/Carta-Anual-de-Governanca-Corporativa-IPT-2023.pdf,não,NA
 Alagoas,GESTÃO DE ATIVOS,Alagoas Ativos SA,Não Dependente,ATIVA,0,0,-97606.31,https://www.alagoasativos.com.br/governanca/politicas/,não,NA
 Alagoas,COMUNICAÇÃO,Companhia de Edição Impressão e Publicação de Alagoas,Não Dependente,ATIVA,0,0,-261187.32,https://www.imprensaoficial.al.gov.br/,não,NA
 Alagoas,SANEAMENTO,Companhia de Saneamento de Alagoas,Não Dependente,ATIVA,287699727.53,47592842.83,-61231260.37,https://www.casal.al.gov.br/tipo-de-arquivo/carta-anual-de-politicas-publicas-e-governanca-corporativa-governanca/,não,NA
@@ -281,18 +281,18 @@ São Paulo,TRANSPORTE,Empresa Metropolitana de Transportes Urbanos de São Paulo
 Tocantins,FINANCEIRO,Agência de Fomento do Estado do Tocantins SA,Não Dependente,ATIVA,156212.06,29982.61,361559.58,https://www.fomento.to.gov.br/page/carta-anual,não,NA
 Tocantins,HABITAÇÃO E URBANIZAÇÃO,Companhia Imobiliária de Participações Investimentos e Parcerias do Estado do Tocantins,Não Dependente,ATIVA,35000000,768748.33,5209471.58,https://www.to.gov.br/tocantinsparcerias,não,NA
 Tocantins,MINERAÇÃO,Companhia de Mineração do Tocantins,Não Dependente,EM LIQUIDAÇÃO,31593584.98,0,-46444.02,https://www.to.gov.br/mineratins/,não,NA
-Amazonas,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento do Estado do Amazonas,Não Dependente Com Indícios De Dependência,ATIVA,49020719.22,0,-1508507.96,https://www.ciama.am.gov.br/wp-content/uploads/2023/07/CARTA-DE-SERVICO-CIAMA.pdf,não,NA
-Ceará,TRANSPORTE,Companhia Cearense de Transportes Metropolitanos,Não Dependente Com Indícios De Dependência,ATIVA,0,16803507.49,-47808470.32,https://www.metrofor.ce.gov.br/acesso-informacao/relatorios/,não,NA
-Espiríto Santo,FINANCEIRO,Banestes Banco do Estado do Espírito Santo,Não Dependente Com Indícios De Dependência,ATIVA,0,110647839.57,370619945.89,https://ri.banestes.com.br/docs/Relatorio-de-Sustentabilidade-banestes-2023-12-31-KB8g9N78.pdf,não,NA
-Espiríto Santo,SANEAMENTO,Companhia Espírito Santense de Saneamento,Não Dependente Com Indícios De Dependência,ATIVA,0,841819749,173544718,https://www.cesan.com.br/a-cesan/,não,NA
-Espiríto Santo,TRANSPORTE,Companhia Estadual de Transportes Coletivos de Passageiros do Espírito Santo,Não Dependente Com Indícios De Dependência,ATIVA,106526984.64,250459.42,6911299.57,https://ceturb.es.gov.br/missao-visao-e-valores,não,NA
-Goiás,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa Estadual de Processamento de Dados de Goiás,Não Dependente Com Indícios De Dependência,EM LIQUIDAÇÃO,32978837.29,0,7012876.72,http://www.administracao.go.gov.br,não,NA
-Piauí,SANEAMENTO,Águas e Esgotos do Piauí SA,Não Dependente Com Indícios De Dependência,ATIVA,0,0,-113845359,https://www.agespisa.com.br/site/pages/public/index.jsf,não,NA
-Piauí,GÁS E DERIVADOS,Companhia de Gás do Piauí,Não Dependente Com Indícios De Dependência,ATIVA,0,40461.5,-1611218.06,Site não disponível,não,NA
-Piauí,PORTOS E HIDROVIAS,Companhia de Terminais Alfandegados do Piauí,Não Dependente Com Indícios De Dependência,ATIVA,21293103.47,648956.25,0,https://portopiaui.com/#,não,NA
-Piauí,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Tecnologia da Informação do Piauí,Não Dependente Com Indícios De Dependência,ATIVA,268975323.76,2972850.09,-87174869.65,https://www.etipi.com.br/documentos/governanca,não,NA
-Rio Grande do Sul,TRANSPORTE,Empresa Gaúcha de Rodovias,Não Dependente Com Indícios De Dependência,ATIVA,0,92096960.87,0,https://egr.rs.gov.br/inicial,não,NA
-Rio Grande do Sul,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia Estadual de Silos e Armazéns,Não Dependente Com Indícios De Dependência,EM LIQUIDAÇÃO,156662573.61,0,-668276819.52,http://www.cesa.rs.gov.br/novosite/,não,NA
-Rio de Janeiro,ENERGIA,Centrais Elétricas Fluminenses SA,Não Dependente Com Indícios De Dependência,EM LIQUIDAÇÃO,0,0,-720,Site não disponível,não,NA
-Rondônia,PORTOS E HIDROVIAS,Sociedade de Portos e Hidrovias do Estado de Rondônia,Não Dependente Com Indícios De Dependência,ATIVA,1000000,543157.86,2946630.68,https://rondonia.ro.gov.br/wp-content/uploads/2024/04/SEI_0047420215_Ato_3.pdf,não,NA
-São Paulo,TRANSPORTE,Companhia do Metropolitano de São Paulo,Não Dependente Com Indícios De Dependência,ATIVA,0,2682447014.75,-900175857.05,https://governancacorporativa.metrosp.com.br/Documentos%20Compartilhados/CartaPoliticasPublicas.pdf,não,NA
+Amazonas,DESENVOLVIMENTO REGIONAL,Companhia de Desenvolvimento do Estado do Amazonas,Não Dependente Com Indícios De Dependência,ATIVA,49020719.22,0,-1508507.96,https://www.ciama.am.gov.br/wp-content/uploads/2023/07/CARTA-DE-SERVICO-CIAMA.pdf,sim,sim
+Ceará,TRANSPORTE,Companhia Cearense de Transportes Metropolitanos,Não Dependente Com Indícios De Dependência,ATIVA,0,16803507.49,-47808470.32,https://www.metrofor.ce.gov.br/acesso-informacao/relatorios/,sim,sim
+Espiríto Santo,FINANCEIRO,Banestes Banco do Estado do Espírito Santo,Não Dependente Com Indícios De Dependência,ATIVA,0,110647839.57,370619945.89,https://ri.banestes.com.br/docs/Relatorio-de-Sustentabilidade-banestes-2023-12-31-KB8g9N78.pdf,sim,sim
+Espiríto Santo,SANEAMENTO,Companhia Espírito Santense de Saneamento,Não Dependente Com Indícios De Dependência,ATIVA,0,841819749,173544718,https://www.cesan.com.br/a-cesan/,sim,sim
+Espiríto Santo,TRANSPORTE,Companhia Estadual de Transportes Coletivos de Passageiros do Espírito Santo,Não Dependente Com Indícios De Dependência,ATIVA,106526984.64,250459.42,6911299.57,https://ceturb.es.gov.br/missao-visao-e-valores,sim,sim
+Goiás,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa Estadual de Processamento de Dados de Goiás,Não Dependente Com Indícios De Dependência,EM LIQUIDAÇÃO,32978837.29,0,7012876.72,http://www.administracao.go.gov.br,sim,sim
+Piauí,SANEAMENTO,Águas e Esgotos do Piauí SA,Não Dependente Com Indícios De Dependência,ATIVA,0,0,-113845359,https://www.agespisa.com.br/site/pages/public/index.jsf,sim,sim
+Piauí,GÁS E DERIVADOS,Companhia de Gás do Piauí,Não Dependente Com Indícios De Dependência,ATIVA,0,40461.5,-1611218.06,Site não disponível,sim,sim
+Piauí,PORTOS E HIDROVIAS,Companhia de Terminais Alfandegados do Piauí,Não Dependente Com Indícios De Dependência,ATIVA,21293103.47,648956.25,0,https://portopiaui.com/#,sim,sim
+Piauí,INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO,Empresa de Tecnologia da Informação do Piauí,Não Dependente Com Indícios De Dependência,ATIVA,268975323.76,2972850.09,-87174869.65,https://www.etipi.com.br/documentos/governanca,sim,sim
+Rio Grande do Sul,TRANSPORTE,Empresa Gaúcha de Rodovias,Não Dependente Com Indícios De Dependência,ATIVA,0,92096960.87,0,https://egr.rs.gov.br/inicial,sim,sim
+Rio Grande do Sul,ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS,Companhia Estadual de Silos e Armazéns,Não Dependente Com Indícios De Dependência,EM LIQUIDAÇÃO,156662573.61,0,-668276819.52,http://www.cesa.rs.gov.br/novosite/,sim,sim
+Rio de Janeiro,ENERGIA,Centrais Elétricas Fluminenses SA,Não Dependente Com Indícios De Dependência,EM LIQUIDAÇÃO,0,0,-720,Site não disponível,sim,sim
+Rondônia,PORTOS E HIDROVIAS,Sociedade de Portos e Hidrovias do Estado de Rondônia,Não Dependente Com Indícios De Dependência,ATIVA,1000000,543157.86,2946630.68,https://rondonia.ro.gov.br/wp-content/uploads/2024/04/SEI_0047420215_Ato_3.pdf,sim,sim
+São Paulo,TRANSPORTE,Companhia do Metropolitano de São Paulo,Não Dependente Com Indícios De Dependência,ATIVA,0,2682447014.75,-900175857.05,https://governancacorporativa.metrosp.com.br/Documentos%20Compartilhados/CartaPoliticasPublicas.pdf,sim,sim
