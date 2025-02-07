@@ -31,7 +31,7 @@ const cards = {
 
         get_current_setores : () => {
 
-            cards.data._current_setores = cards.utils.unique(cards.data._filtered, "setor");
+            cards.data._current_setores = cards.utils.unique(cards.data._filtered, "setor").sort();
 
         },
 
