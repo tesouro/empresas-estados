@@ -37,7 +37,7 @@ const cards = {
 
         get_estados : () => {
 
-            cards.data._estados = cards.utils.unique(cards.data._raw, "Nome_estado");
+            cards.data._estados = cards.utils.unique(cards.data._raw, "Nome_estado").sort();
 
 
         },
