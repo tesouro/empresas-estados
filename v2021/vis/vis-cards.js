@@ -31,13 +31,13 @@ const cards = {
 
         get_current_setores : () => {
 
-            cards.data._current_setores = cards.utils.unique(cards.data._filtered, "setor");
+            cards.data._current_setores = cards.utils.unique(cards.data._filtered, "setor").sort();
 
         },
 
         get_estados : () => {
 
-            cards.data._estados = cards.utils.unique(cards.data._raw, "Nome_estado");
+            cards.data._estados = cards.utils.unique(cards.data._raw, "Nome_estado").sort();
 
 
         },

@@ -54,16 +54,71 @@
 
         <p>No gráfico abaixo é apresentada a distribuição (frequência) de estatais por setores e situação de dependência, onde cada círculo representa uma empresa estatal. Clicando sobre os círculos são apresentadas as seguintes informações: estado, nome da empresa, dependência, situação, capital social, investimento realizado, lucros/prejuízos apurados e link para a carta anual de políticas públicas da empresa. Além disso, é possível selecionar um estado para ver apenas as suas empresas. </p>
 
+        <figure class="vis-cards plot-container" id="vis-ficha-basica">
+            <h3 class="plot-title">Ficha básica das empresas por setor</h3>
+            <ul class="plot-legenda">
+                <li><span class="plot-legenda-key" style = "background-color: #f2ac29; border-radius: 50%;"></span> Dependentes</li>
+                <li><span class="plot-legenda-key" style = "background-color: #718c35; border-radius: 50%;"></span> Não Dependentes</li>
+                <li><span class="plot-legenda-key" style = "background: linear-gradient(-45deg, var(--cor-dependente) 0, var(--cor-dependente) 50%, var(--cor-independente) 50%, var(--cor-independente) 100%); border-radius: 50%;"></span> Não Dependentes, com indícios de dependência</li>
+                <!--<li><span class="plot-legenda-key" style = "background-color: #5c4b51;"></span> Não Informado</li>-->
+            </ul>
+    
+            <label for="seletor-estados">Selecione um estado: </label>
+            <select name="estados" id="seletor-estados"></select>
+    
+            <div class="container-vis-and-cards">
+    
+                <div class="vis-cards"></div>
+    
+                <div class="card-container-wrapper">
+    
+                    <p class="mensagem">Clique sobre uma empresa para exibir mais detalhes.</p>
+    
+                    <div class="card-container" data-dependencia="" hidden>
+                        <p data-cardinfo="Nome_estado"></p>
+                        <p data-cardinfo="emp"></p>
+            
+                        <p>Empresa <span data-cardinfo="dep"></span></p> 
+                        <p data-tipo-indicio="NA">Empresa não dependente, mas com <em>indícios de dependência</em> por ter recebido <span class="tipo-indicio-subvencao">subvenções do ente controlador</span><span class="tipo-indicio-reforco">reforço de capital do ente controlador, sem que o Capital Social declarado pela empresa tenha se alterado em relação ao exercício anterior</span>.</p>
+                        <p>Situação: <span data-cardinfo="sit"></span></p>
+                        
+            
+                        <div class="mini-vis-container">
+    
+                            <!-- devia encapsular essa galera aqui em divs -->
+                            <p>Capital Social: <span data-cardinfo-value="capital"></span></p>
+                            <div class="mini-vis-rect" data-minivis-coluna="capital"></div>
+    
+                            <p>Investimento realizado: <span data-cardinfo-value="desp_investimento"></span></p>
+                            <div class="mini-vis-rect" data-minivis-coluna="desp_investimento"></div>
+    
+                            <p>Lucros/Prejuízos: <span data-cardinfo-value="lucros"></span></p>
+                            <div class="mini-vis-rect" data-minivis-coluna="lucros"></div>
+    
+                        </div>
+                    
+                        <p class="link-carta"><a href="" target="_blank">Link da carta anual de políticas públicas da empresa</a></p>
+            
+                    </div>
+                </div>
+    
+            </div>
+    
+        </figure>
+
+        <!--
         <figure class="plot-container">
             <h3 class="plot-title">Ficha básica das empresas por setor</h3>
             <ul class="plot-legenda">
                 <li><span class="plot-legenda-key" style = "background-color: #f2ac29; border-radius: 50%;"></span> Dependentes</li>
                 <li><span class="plot-legenda-key" style = "background-color: #718c35; border-radius: 50%;"></span> Não Dependentes</li>
                 <li><span class="plot-legenda-key" style = "background-color: #b19c2f; border-radius: 50%;"></span> Não Dependentes, com indícios de dependência</li>
-                <!--<li><span class="plot-legenda-key" style = "background-color: #5c4b51;"></span> Não Informado</li>-->
+                <li><span class="plot-legenda-key" style = "background-color: #5c4b51;"></span> Não Informado</li>
             </ul>
             <iframe class="plot-interativo" src="./plots/grafico_empresas_setor_com_filtro.html" frameborder="0" width="770" height="485"></iframe>
         </figure>
+        -->
+    
 
         </div>
 
@@ -108,10 +163,19 @@
 
         <div class="mapa-setores">
 
-            <figure class="plot-container">
-                <iframe class="plot-interativo" src="./plots/galeria.html" frameborder="0" width="700" height="600"></iframe>
+            <div class="mapa-setores-selecao">
+                <label for="seletor-setores">Escolha o setor:</label>
+
+                <select name="setores" id="seletor-setores">
+                </select>
+            </div>
+
+            <div class="boxes-definicao">
+            </div>
+
+            <figure class="vis-mapa">
+                <svg class="vis-mapa"></svg>
             </figure>
-            
         </div>
 
         <figure class="plot-container">
@@ -214,8 +278,8 @@
         <h3 class="plot-title">Pagamento de Participação nos Lucros</h3>
         <h4 class="plot-subtitle">Os números indicam o percentual de empresas não dependentes de cada setor que pagaram PLR. Estão excluídas oito empresas para as quais não foram fornecidas as informações necessárias.</h4>
         <ul class="plot-legenda">
-            <li><span class="plot-legenda-key" style = "background-color: #735D36;"></span> Empresa que pagou PLR</li>
-            <li><span class="plot-legenda-key" style = "background-color: #F4C773;"></span> Empresa que não pagou PLR</li>         
+            <li><span class="plot-legenda-key" style = "background-color: #735D36;"></span> Empresas que pagaram  PLR</li>
+            <li><span class="plot-legenda-key" style = "background-color: #F4C773;"></span> Empresas que não pagaram PLR</li>         
         </ul>
         <img class="plot" src="./plots/plr.png" alt="Visualização da quantidade de empresas que pagaram ou não participação nos lucros, para cada setor, na forma de um gráfico de barras empilhado."/>
     </figure>  
@@ -650,6 +714,9 @@
 
         <p><a href="https://github.com/tchiluanda/estatais-estados/">https://github.com/tchiluanda/estatais-estados/</a></p>
     </section>
+
+
+    
 
 
     <script src="./vis/d3.v6.min.js"></script>
