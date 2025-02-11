@@ -53,7 +53,7 @@
         </p>A base de dados está disponível para ser baixa ao final desta página. 
         </p> 
         
-        <p>No gráfico abaixo é apresentada a distribuição (frequência) de estatais por setores e situação de dependência, onde cada círculo representa uma empresa estatal. Clicando sobre os círculos são apresentadas as seguintes informações: estado, nome da empresa, dependência, situação, capital social, investimento realizado, lucros/prejuízos apurados e link para a carta anual de políticas públicas da empresa. Além disso, é possível selecionar um estado para ver apenas as suas empresas. </p> 
+        <p>No gráfico abaixo é apresentada a distribuição (frequência) de estatais por setores e situação de dependência, onde cada círculo representa uma empresa estatal. Clicando sobre os círculos são apresentadas as seguintes informações: Estado, nome da empresa, dependência, situação, capital social, investimento realizado, lucros/prejuízos apurados e link para a carta anual de políticas públicas da empresa. Além disso, é possível selecionar um Estado para ver apenas as suas empresas. </p> 
 
         <figure class="vis-cards plot-container" id="vis-ficha-basica">
             <h3 class="plot-title">Ficha básica das empresas por setor</h3>
@@ -64,8 +64,8 @@
                 <!--<li><span class="plot-legenda-key" style = "background-color: #5c4b51;"></span> Não Informado</li>-->
             </ul>
     
-            <label for="seletor-estados">Selecione um estado: </label>
-            <select name="estados" id="seletor-estados"></select>
+            <label for="seletor-Estados">Selecione um Estado: </label>
+            <select name="Estados" id="seletor-Estados"></select>
     
             <div class="container-vis-and-cards">
     
@@ -76,7 +76,7 @@
                     <p class="mensagem">Clique sobre uma empresa para exibir mais detalhes.</p>
     
                     <div class="card-container" data-dependencia="" hidden>
-                        <p data-cardinfo="Nome_estado"></p>
+                        <p data-cardinfo="Nome_Estado"></p>
                         <p data-cardinfo="emp"></p>
             
                         <p>Empresa <span data-cardinfo="dep"></span></p> 
@@ -123,11 +123,11 @@
 
         </div>
 
-        <h2>Com quantas estatais se faz um estado?</h2>
+        <h2>Com quantas estatais se faz um Estado?</h2>
 
-        <p>Conforme os dados informados no SICONFI (Sistema di Informações Contábeis e Fiscais do Setor Público Brasileiro), no exercício de 2023 havia 295 empresas controladas pelos estados, sendo que 259 estavam em situação ativa e 36 em fase de liquidação, destas 32 já se encontravam nessa situação no exercício anterior. Além disso, 21 destas empresas que estão sendo extintas são estatais dependentes.  </p>
+        <p>Conforme os dados informados no SICONFI (Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro), no exercício de 2023 havia 295 empresas controladas pelos Estados, sendo que 259 estavam em situação ativa e 36 em fase de liquidação, destas 32 já se encontravam nessa situação no exercício anterior. Além disso, 21 destas empresas que estão sendo extintas são estatais dependentes.  </p>
 
-        <p>Em relação ao exercício de 2022, houve um aumento na quantidade de estatais. Embora 15 empresas tenham deixado de constar em relação ao ano anterior, foram incluídos dados de mais 18. Das empresas que deixaram de ser informadas, há duas em cada um dos seguintes estados: Goiás, Minas Gerais, Piauí e Rio Grande do Sul; e uma em cada um dos seguintes estados: Ceará, Distrito Federal, Espírito Santo, Paraná, Roraima, Santa Catarina e São Paulo. Das que foram incluídas, quatro são de Mato Grosso, três de Alagoas, três do Piauí, duas do Ceará, duas do Distrito Federal e uma de cada um dos seguintes estados: Goiás, Roraima, Sergipe e Tocantins. </p>
+        <p>Em relação ao exercício de 2022, houve um aumento na quantidade de estatais. Embora 15 empresas tenham deixado de constar em relação ao ano anterior, foram incluídos dados de mais 18. Das empresas que deixaram de ser informadas, há duas em cada um dos seguintes Estados: Goiás, Minas Gerais, Piauí e Rio Grande do Sul; e uma em cada um dos seguintes Estados: Ceará, Distrito Federal, Espírito Santo, Paraná, Roraima, Santa Catarina e São Paulo. Das que foram incluídas, quatro são de Mato Grosso, três de Alagoas, três do Piauí, duas do Ceará, duas do Distrito Federal e uma de cada um dos seguintes Estados: Goiás, Roraima, Sergipe e Tocantins. </p>
         
         <p> A quantidade de estatais que cada Estado possui varia bastante, o Distrito Federal possui 25 empresas, seguido pelo Rio de Janeiro, com 22, e Santa Catarina, com 16. Em quarto lugar encontram-se Pernambuco, Paraíba, Minas Gerais e Goiás, com 15 estatais cada. Já os Estados com a menor quantidade de estatais são Amapá e Tocantins, com três cada, e Roraima e Maranhão, com cinco cada. </p>
 
@@ -146,7 +146,7 @@
                     <li><span class="plot-legenda-key" style = "background-color: #718c35;"></span> Não Dependentes</li>
                     <!--<li><span class="plot-legenda-key" style = "background-color: #5c4b51;"></span> Não Informado</li>-->
                 </ul>
-                <img class="plot" src="./plots/qde_est.png" alt="Visualização da quantidade de empresas por estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
+                <img class="plot" src="./plots/qde_est.png" alt="Visualização da quantidade de empresas por Estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
         </figure>  
 
         <p>Em termos de dependência, o Estado do Rio de Janeiro apresenta o maior número de empresas dependentes (15), seguido pelo Acre (12). Já entre as empresas não dependentes, o Distrito Federal lidera o ranking, com 17 empresas, seguido por Minas Gerais e Santa Catarina, ambos com 12.</p>
@@ -155,10 +155,10 @@
        
         <figure class="plot-container">
             <h3 class="plot-title">Situação das Estatais</h3>
-            <img class="plot" src="./plots/situacao_empresas.jpeg" alt="Visualização da quantidade de empresas por estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
+            <img class="plot" src="./plots/situacao_empresas.jpeg" alt="Visualização da quantidade de empresas por Estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
         </figure>
 
-        <p>Ao examinar a quantidade de empresas controladas de acordo com os segmentos empresariais, observa-se que o setor financeiro, com 38 empresas, e o setor de saneamento, com 28, são os que possuem o maior número de estatais, destacando-se como os de maior representatividade entre os estados. Em 3º e 4º lugares estão os setores de desenvolvimento regional, com 23 empresas, e de habitação e urbanização, com 22. Entre os segmentos com menor quantitativo de empresas, destacam-se os setores de saúde, com 5, mineração, com 7, e turismo e comunicação, ambos com 9 empresas.  </p>
+        <p>Ao examinar a quantidade de empresas controladas de acordo com os segmentos empresariais, observa-se que o setor financeiro, com 38 empresas, e o setor de saneamento, com 28, são os que possuem o maior número de estatais, destacando-se como os de maior representatividade entre os Estados. Em 3º e 4º lugares estão os setores de desenvolvimento regional, com 23 empresas, e de habitação e urbanização, com 22. Entre os segmentos com menor quantitativo de empresas, destacam-se os setores de saúde, com 5, mineração, com 7, e turismo e comunicação, ambos com 9 empresas.  </p>
 
         <p>Em relação ao critério de dependência, o setor de pesquisa e assistência técnica agropecuária continua, como no exercício anterior, com o maior número de empresas dependentes (19), seguido pelos setores de habitação e urbanização (15) e transporte (14). Por outro lado, o setor financeiro caracteriza-se pelo maior quantitativo de empresas não dependentes (34), seguido pelos setores de saneamento (23) e gás e derivados (17).  </p>
 
@@ -172,7 +172,7 @@
                 <img class="plot" src="./plots/qde_seg.png" alt="Visualização da quantidade de empresas por segmento ou setor, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
         </figure> 
         
-        <p>Abaixo é possível selecionar um setor para exibir sua definição, bem como um mapa indicando os estados que possuem empresas nessa área de atuação.  </p>
+        <p>Abaixo é possível selecionar um setor para exibir sua definição, bem como um mapa indicando os Estados que possuem empresas nessa área de atuação.  </p>
 
         <div class="mapa-setores">
 
@@ -196,7 +196,7 @@
         </figure>
 
 
-        <h2>O estado empreendedor</h2>
+        <h2>O Estado empreendedor</h2>
          
         <div class="container-grupo-com-quadro">
             
@@ -226,7 +226,7 @@
 
         <figure class="plot-container">
             <h3 class="plot-title">Evolução de Lucros e Prejuízos</h3>
-            <img class="plot" src="./plots/evolucao_lucros_prejuizos.jpeg" alt="Visualização da quantidade de empresas por estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
+            <img class="plot" src="./plots/evolucao_lucros_prejuizos.jpeg" alt="Visualização da quantidade de empresas por Estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
         </figure>
 
         <P>Em termos de segmento empresarial, o setor que apresentou o maior lucro para o período foi o de saneamento, com um total de R$ 7,7 bilhões. Na sequência, destaca-se o segmento de energia, com R$ 6,7 bilhões, seguido pelo setor financeiro, com R$ 3,9 bilhões. Por outro lado, o setor de Transporte registrou o pior resultado do período, com um prejuízo de R$ 8,9 bilhões. Em seguida, o segmento de abastecimento de alimentos e outros insumos apresentou perdas de aproximadamente R$ 651 milhões.   </P>
@@ -269,7 +269,7 @@
     
     <figure class="plot-container">
         <h3 class="plot-title">Evolução do Patrimônio Líquido Total</h3>
-        <img class="plot" src="./plots/evolucao_patrimonio_liquido.jpeg" alt="Visualização da quantidade de empresas por estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
+        <img class="plot" src="./plots/evolucao_patrimonio_liquido.jpeg" alt="Visualização da quantidade de empresas por Estado, na forma de um gráfico de barras empilhadas, separando dependentes das não dependentes. As principais informações mostradas são aquelas já descritas no parágrafo anterior.">
     </figure>
 
     
@@ -306,7 +306,7 @@
 
             <tr> 
                 <td> SP </td> 
-                <td class="nome-empresa-cell">COMPANHIA AMBIENTAL DO ESTADO DE SAO PAULO</td> 
+                <td class="nome-empresa-cell">COMPANHIA AMBIENTAL DO Estado DE SAO PAULO</td> 
                 <td> Não Dependente </td> 
                 <td class="value-cell value-cell-neg"> -R$ 22.938.360,73   </td> 
                 <td class="value-cell value-cell-neg"> -R$ 116.331.803,93</td>
@@ -331,7 +331,7 @@
         <img class="plot" src="./plots/distribuicao_PL.jpeg">
     </figure>
 
-    <h2>O estado administrador</h2>
+    <h2>O Estado administrador</h2>
 
     <p>Estruturas de governança têm como objetivo principal coordenar a empresa para atingir seus objetivos. Elas podem ser formadas por diferentes comitês ou conselhos que atuam focados em áreas específicas (como, por exemplo, fiscal, administração e auditoria), visando auxiliar a empresa em seus resultados. </p>
  
@@ -388,14 +388,14 @@
         </figure>
         
         <!--<figure class="plot-container">
-            <h3 class="plot-title">Presença de estrutura de governança por estado</h3>
-            <h4 class="plot-subtitle">Percentuais das empresas que possuem estruturas de governança completas (Conselho de Administração, Conselho Fiscal e Comitê de Auditoria) por estado e por tipo de dependência.</h4>   
+            <h3 class="plot-title">Presença de estrutura de governança por Estado</h3>
+            <h4 class="plot-subtitle">Percentuais das empresas que possuem estruturas de governança completas (Conselho de Administração, Conselho Fiscal e Comitê de Auditoria) por Estado e por tipo de dependência.</h4>   
             <ul class="plot-legenda">
                     <li><span class="plot-legenda-key" style = "background-color: #f2ac29; border-radius: 100%;"></span> Dependentes</li>
                     <li><span class="plot-legenda-key" style = "background-color: #718c35; border-radius: 100%;"></span> Não Dependentes</li>       
             </ul>
 
-            <img class="plot" style="width:85%;" src="./plots/gov_est_dotplot.png" alt="Da mesma forma, em quase todos os estados o percentual de empresas não dependentes que possuem a estrutura de governança é maior do que o de empresas dependentes.">
+            <img class="plot" style="width:85%;" src="./plots/gov_est_dotplot.png" alt="Da mesma forma, em quase todos os Estados o percentual de empresas não dependentes que possuem a estrutura de governança é maior do que o de empresas dependentes.">
         </figure>-->
 
         <p>O gráfico abaixo mostra que as empresas mais lucrativas possuem as três estruturas de governança, 77% das empresas que possuem estrutura de governança completa apresentaram rentabilidade positiva, enquanto entre as que não possuem, esse percentual é de 54%.  </p>
@@ -417,7 +417,7 @@
         <p>A Lei estabelece também que a carta anual deve ter ampla publicidade e estar em linguagem clara e direta. Note-se que, ao exigir essa publicação, a Lei objetiva permitir que a sociedade possa acompanhar as ações das estatais, avaliar seu atendimento ao interesse coletivo e ao cumprimento das políticas públicas. Assim, a sociedade é capaz de agir como um agente adicional à estrutura de governança da estatal. </p>
 
     
-        <h2>O estado acionista</h2>
+        <h2>O Estado acionista</h2>
 
         <p>Quais os resultados das empresas para o Estado Acionista?</p>
 
@@ -434,7 +434,7 @@
 
         <figure class="plot-container">
                 <h3 class="plot-title">Resultado Líquido das Empresas para o Estado Acionista</h3>
-                <img class="plot" style="width:85%;" src="./plots/mapa_result.png" alt="Mapa do Brasil com estados coloridos conforme o valor do resultado líquido das empresas do estado. Como mencionado no texto, em 2021, os únicos Estados que receberam mais recursos das estatais do que transferiram foram Alagoas, Espírito Santo, Minas Gerais, Paraná e Rio Grande do Sul. Esses estados estão coloridos em gradações da cor azul. Os demais estados, que transferiram mais recursos do que receberam das suas estatais, estão coloridos em gradações da cor vermelha. Quanto mais azul ou mais vermelho, maior o valor do 'lucro' ou do 'prejuízo' do estado com suas estatais.">
+                <img class="plot" style="width:85%;" src="./plots/mapa_result.png" alt="Mapa do Brasil com Estados coloridos conforme o valor do resultado líquido das empresas do Estado. Como mencionado no texto, em 2021, os únicos Estados que receberam mais recursos das estatais do que transferiram foram Alagoas, Espírito Santo, Minas Gerais, Paraná e Rio Grande do Sul. Esses Estados estão coloridos em gradações da cor azul. Os demais Estados, que transferiram mais recursos do que receberam das suas estatais, estão coloridos em gradações da cor vermelha. Quanto mais azul ou mais vermelho, maior o valor do 'lucro' ou do 'prejuízo' do Estado com suas estatais.">
         </figure>  
         
         <p>Um ponto importante é que, além dos recursos transferidos pelos Estados para as estatais na forma de aporte de capital e subvenções, em 2023 os Estados assumiram R$ 2,5 bilhões de passivos dessas empresas.    </p> 
@@ -459,7 +459,7 @@
 
         </div>
 
-        <p>Conforme mencionado na edição anterior, entre os exercícios de 2021 e 2022 houve um aumento de 20% nos aportes realizados pelos estados a título de subvenções para estatais estaduais, passando de R$ 10 bilhões para R$ 12 bilhões. </p>
+        <p>Conforme mencionado na edição anterior, entre os exercícios de 2021 e 2022 houve um aumento de 20% nos aportes realizados pelos Estados a título de subvenções para estatais estaduais, passando de R$ 10 bilhões para R$ 12 bilhões. </p>
 
         <p>Em 2023, observa-se um ligeiro decréscimo em relação ao exercício anterior: foram aportados R$ 11,5 bilhões a título de subvenções para estatais estaduais. Esse valor foi distribuído entre 111 estatais, das quais 12 foram declaradas como não dependentes, sendo que, dessas, 3 estavam em processo de liquidação. Desse total, R$ 1,5 bilhão foi destinado às estatais não dependentes, valor inferior ao de 2022, quando o montante foi de R$ 1,9 bilhão.  </p>
         </p>
@@ -630,7 +630,7 @@
         </p>
 
 
-        <p>Além disso, oito empresas e uma fundação passaram por reclassificação de dependência na análise fiscal realizada pela Secretaria do Tesouro Nacional, em âmbito do Programa de Ajuste Fiscal (PAF) – para saber mais sobre o PAF <a href="https://www.tesourotransparente.gov.br/temas/estados-e-municipios/estatisticas-fiscais-de-programas-de-ajuste-fiscal-paf"> acesse aqui. </a> Esses são casos em que o ente considera a entidade como não dependente, mas há alguma orientação de órgão de controle para reenquadramento. Destas, a empresa Companhia Cearense de Transportes Metropolitanos já havia sido enquadrada nos critérios de indícios de dependência realizados pela STN.    
+        <p>Além disso, oito empresas e uma fundação passaram por reclassificação de dependência na análise fiscal realizada pela Secretaria do Tesouro Nacional, em âmbito do Programa de Ajuste Fiscal (PAF) – para saber mais sobre o PAF <a href="https://www.tesourotransparente.gov.br/temas/Estados-e-municipios/estatisticas-fiscais-de-programas-de-ajuste-fiscal-paf"> acesse aqui. </a> Esses são casos em que o ente considera a entidade como não dependente, mas há alguma orientação de órgão de controle para reenquadramento. Destas, a empresa Companhia Cearense de Transportes Metropolitanos já havia sido enquadrada nos critérios de indícios de dependência realizados pela STN.    
         </p>
         
         <!-- table reforco capital -->
@@ -696,11 +696,11 @@
 <hr>   <hr>
 
         <nav class="links-versoes">
-            <a href="https://tesouro.github.io/empresas-estados/v2019/">Versão 2019 (dados de 2018)</a>
-            <a href="https://tesouro.github.io/empresas-estados/v2020/">Versão 2020 (dados de 2019)</a>
-            <a href="https://tesouro.github.io/empresas-estados/v2021/">Versão 2021 (dados de 2020)</a>
-            <a href="https://tesouro.github.io/empresas-estados/v2022/">Versão 2022 (dados de 2021)</a>
-            <a href="https://tesouro.github.io/empresas-estados/">Versão 2023 (dados de 2023)</a> 
+            <a href="https://tesouro.github.io/empresas-Estados/v2019/">Versão 2019 (dados de 2018)</a>
+            <a href="https://tesouro.github.io/empresas-Estados/v2020/">Versão 2020 (dados de 2019)</a>
+            <a href="https://tesouro.github.io/empresas-Estados/v2021/">Versão 2021 (dados de 2020)</a>
+            <a href="https://tesouro.github.io/empresas-Estados/v2022/">Versão 2022 (dados de 2021)</a>
+            <a href="https://tesouro.github.io/empresas-Estados/">Versão 2023 (dados de 2023)</a> 
         </nav>
 
     </section>
@@ -715,7 +715,7 @@
 
         <p>O repositório está disponível em: </p>
 
-        <p><a href="https://github.com/tesouro/empresas-estados/tree/master">https://github.com/tesouro/empresas-estados/tree/master</a></p>
+        <p><a href="https://github.com/tesouro/empresas-Estados/tree/master">https://github.com/tesouro/empresas-Estados/tree/master</a></p>
     </section>
 
 
