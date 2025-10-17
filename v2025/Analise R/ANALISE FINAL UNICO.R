@@ -66,12 +66,12 @@ tema_mapa <- function() {
 
 Sys.setenv(RSTUDIO_PANDOC = "C:/Program Files/Pandoc")
 
-setwd("https://tesouro.sharepoint.com/teams/COREM-GERAT/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fteams%2FCOREM%2DGERAT%2FDocumentos%20Compartilhados%2FGERAT%2F4%2D%20Estatais%2FRaio%2DX%202025&viewid=f288d549%2Deca1%2D4101%2D8356%2De95179c09763&CT=1690567259458&FolderCTID=0x0120002872401832A5A64B868B98D61E40DABB") # nolint
+setwd("C:/Users/Lenovo/Documents/STN 2025/empresas-estados-master/empresas-estados-master") # nolint
 
 tab_uf <- read_excel("./dados/dados-originais/tab_ufs.xlsx") %>%
   select(Estado, Nome_estado, REGIAO)
 
-dados_raw <- read_excel("v2025/dados/dados-originais/Dados para Raio-x 2025 (compatibilizando con quadro_estatais_v3).xlsx", sheet = "lista definitiva") # nolint
+dados_raw <- read_excel("./dados/dados-originais/quadro_estatais_v3.xlsx", sheet = "lista definitiva") # nolint
 
 tab_definicoes_setores <- read_excel("./dados/dados-originais/tab_setores.xlsx", sheet = "def") # nolint
 
