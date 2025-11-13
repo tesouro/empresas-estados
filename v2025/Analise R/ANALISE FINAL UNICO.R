@@ -66,12 +66,12 @@ tema_mapa <- function() {
 
 Sys.setenv(RSTUDIO_PANDOC = "C:/Program Files/Pandoc")
 
-setwd("C:/Users/Lenovo/Documents/STN 2025/empresas-estados-master/empresas-estados-master") # nolint
+setwd("C:/Users/Lenovo/Documents/STN 2025/empresas-estados-master") # nolint
 
 tab_uf <- read_excel("./dados/dados-originais/tab_ufs.xlsx") %>%
   select(Estado, Nome_estado, REGIAO)
 
-dados_raw <- read_excel("./dados/dados-originais/quadro_estatais_v3.xlsx", sheet = "lista definitiva") # nolint
+dados_raw <- read_excel("C:/Users/Lenovo/Documents/STN 2025/empresas-estados-master/v2025/dados/dados-originais/quadro_estatais_v4.xlsx", sheet = "Todos") # nolint
 
 tab_definicoes_setores <- read_excel("./dados/dados-originais/tab_setores.xlsx", sheet = "def") # nolint
 
@@ -88,22 +88,19 @@ dados_selecionados_raw <- dados_raw %>%
     gov_ca    = `Possui Conselho de Administração`,
     gov_cf    = `Possui Conselho Fiscal`,
     gov_aud   = `Possui Comitê de Autidoria`,
-    maior_rem = `Remuneração bruta total paga no ano`, # nolint
+    maior_rem = `Remuneração bruta total paga no ano (empregado que recebeu a maior remuneração)`, # nolint
     plr_rva   = `Foi Distribuído PLR ou RVA no exercício`,
     qde_empregados = `Número de Empregados (incluindo temporários e terceirizados)`, # nolint
     desp_investimento = `Investimento (por competência)`,
     desp_pessoal = `Despesa com Pessoal, incluindo temporários e terceirizados (por competência)`, # nolint
     Dividendos = `Dividendos e Juros sobre Capital Próprio pagos ao Tesouro Estadual / Municipal (pago)`, # nolint
-    `Subvenção` = `Subvenções Recebidas do Tesouro Estadual / Municipal - Exercício`,
-    `Subvenção (anterior)` = `Subvenções Recebidas do Tesouro Estadual / Municipal - Exercício anterior`,
-    `Reforço de Capital` = `Reforço de Capital -Exercício`,
-    `Reforço de Capital (anterior)` = `Reforço de Capital -Exercício anterior`,
-    capital = `Capital Social a Integralizar -Exercício`,
-    link      = `Link Carta Anual (copiar)`,
-    indicio_dependencia = `Dependência`,
-    var_capital = `Variação do Capital Social`,
-    var_acoes = `Variação das Ações`,
-  )
+    `Subvenção` = `Subvenções - Exercício`,
+    `Subvenção (anterior)` = `Subvenções - Exercício anterior`,
+    `Reforço de Capital` = `Reforço de Capital - Exercício`,
+    `Reforço de Capital (anterior)` = `Reforço de Capital - Exercício anterior`,
+    capital = `Capital Social a Integralizar - Exercício`,
+    link      = `Link Carta Anual`,
+    indicio_dependencia = `Dependência`)
 
 # Remove all special characters from the 'Name' column
 dados_selecionados_raw$emp <- str_replace_all(dados_selecionados_raw$emp, "[^[:alnum:] ]", "") # nolint
@@ -1287,7 +1284,7 @@ library(htmltools)
 library(base64enc)
 
 # Define o caminho da pasta com as imagens
-caminho_absoluto <- "C:/Users/gustavo.silva/OneDrive - Tesouro Nacional/Área de Trabalho/projetos/RAIO_X_EMPRESAS_DOS_ESTADOS/2023/plots_final/quebra"
+caminho_absoluto <- "C:/Users/Lenovo/Documents/STN 2025/empresas-estados-master/v2025/plots_final"
 
 # Lista as imagens na pasta
 imagens <- list.files(caminho_absoluto, pattern = "\\.png$", full.names = TRUE)
@@ -1357,3 +1354,4 @@ html_file <- file.path(caminho_absoluto, "../galeria.html")
 save_html(html, html_file)
 
 print(paste("Galeria HTML criada em:", html_file))
+
