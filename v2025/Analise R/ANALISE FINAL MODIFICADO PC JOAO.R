@@ -66,7 +66,7 @@ tema_mapa <- function() {
 
 Sys.setenv(RSTUDIO_PANDOC = "C:/Program Files/Pandoc")
 
-setwd("C:/Users/Lenovo/Documents/STN 2025/empresas-estados-master/v2025") # nolint
+setwd("C:/Users/Lenovo/empresas-estados/v2025") # nolint
 
 tab_uf <- read_excel("./dados/dados-originais/tab_ufs.xlsx") %>%
   select(Estado, Nome_estado, REGIAO)
