@@ -44,11 +44,12 @@ header div.sobre-imagem {
 }
 
 header div.sobre-imagem h1 {
-    font-size: 3.1rem;
+    font-size: 4rem;
     margin: 0;
-    line-height: 1.0;
-    color: rgb(0,51,102);
-    
+    line-height: 1.2;
+    color: #f2ac29;
+    text-shadow: 0px 0px 10px rgb(59,55,52);
+      
 }
 
 header div.sobre-imagem h2 {
