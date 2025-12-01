@@ -732,9 +732,12 @@
         <p><a href="https://github.com/tesouro/empresas-estados/tree/master">https://github.com/tesouro/empresas-estados/tree/master</a></p>
     </section>
 
-
-    
-
+<script>
+  document.querySelectorAll('a').forEach(function(link) {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+  });
+</script>   
 
     <script src="./vis/d3.v6.min.js"></script>
     <script src="./vis/topojson.min.js"></script>
