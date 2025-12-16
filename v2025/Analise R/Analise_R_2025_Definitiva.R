@@ -19,6 +19,9 @@ library(geojsonsf)
 
 library(janitor)
 
+#pasta_caminho_absoluto <- "C:/Users/gustavo.silva/OneDrive - Tesouro Nacional/Área de Trabalho/projetos/RAIO_X_EMPRESAS_DOS_ESTADOS/2023/"
+pasta_caminho_absoluto <- "/home/igoracosta/projetos/empresas-estados/v2025/"
+
 
 # estilo dos gráficos -----------------------------------------------------
 
@@ -66,12 +69,11 @@ tema_mapa <- function() {
 
 Sys.setenv(RSTUDIO_PANDOC = "C:/Program Files/Pandoc")
 
-setwd("C:/Users/gustavo.silva/OneDrive - Tesouro Nacional/Área de Trabalho/projetos/RAIO_X_EMPRESAS_DOS_ESTADOS/2023") # nolint
-
+setwd(pasta_caminho_absoluto) # nolint
 tab_uf <- read_excel("./dados/dados-originais/tab_ufs.xlsx") %>%
   select(Estado, Nome_estado, REGIAO)
 
-dados_raw <- read_excel("C:/Users/gustavo.silva/OneDrive - Tesouro Nacional/Área de Trabalho/projetos/RAIO_X_EMPRESAS_DOS_ESTADOS/2023/dados/dados-originais/Dados_para_Raio-x2_(compatibilizando_com_quadro_estatais_v3).xlsx", sheet = "ex2024") # nolint
+dados_raw <- read_excel("./dados/dados-originais/Dados_para_Raio-x2_(compatibilizando_com_quadro_estatais_v3).xlsx", sheet = "ex2024") # nolint
 tab_definicoes_setores <- read_excel("./dados/dados-originais/tab_setores.xlsx", sheet = "def") # nolint
 
 dados_selecionados_raw <- dados_raw %>%
@@ -142,6 +144,7 @@ tab_definicoes_setores$cores <- viridis::plasma(nrow(tab_definicoes_setores), di
 # Exportação da lista de setores
 write.csv(tab_definicoes_setores, file = "./dados/lista-setores.csv", fileEncoding = "UTF-8") # nolint
 
+
 # Mapa
 dados_qde_setor_estado <- dados_selecionados %>%
   count(setor, Estado)
@@ -161,6 +164,9 @@ todos_setores_estados <- full_join(
   by = character()
 )
 
+print("todos_setores_estados")
+print(todos_setores_estados)
+
 # Transformação dos dados do mapa
 dados_setor_estados_mapa <- todos_setores_estados %>%
   left_join(dados_qde_setor_estado) %>%
@@ -168,6 +174,9 @@ dados_setor_estados_mapa <- todos_setores_estados %>%
   group_by(Estado, cod_setor) %>% # Agrupa para lidar com duplicatas
   summarise(tem_empresa = max(tem_empresa), .groups = "drop") %>% # Resolve duplicatas
   pivot_wider(names_from = cod_setor, values_from = tem_empresa, values_fill = 0) # Substitui spread
+
+print("dados_setor_estados_mapa")
+print(dados_setor_estados_mapa)
 
 # Adiciona os dados de quantidade ao mapa
 mapa_qde_export <- mapa %>%
@@ -178,8 +187,8 @@ mapa_qde_export <- mapa %>%
 write_file(
   geojsonsf::sf_geojson(mapa_qde_export), #, digits = 5),  # nolint
   "./dados/mapa-setores.geojson"
-)
-
+  )
+  
 ###################################################################################################################
 
 # plot mapa small multiples -----------------------------------------------
@@ -1238,7 +1247,7 @@ library(htmltools)
 library(base64enc)
 
 # Define o caminho da pasta com as imagens
-caminho_absoluto <- "C:/Users/gustavo.silva/OneDrive - Tesouro Nacional/Área de Trabalho/projetos/RAIO_X_EMPRESAS_DOS_ESTADOS/2023/plots_final/quebra"
+caminho_absoluto <- paste0(pasta_caminho_absoluto, "plots_final/quebra")
 
 # Lista as imagens na pasta
 imagens <- list.files(caminho_absoluto, pattern = "\\.png$", full.names = TRUE)
@@ -1254,6 +1263,102 @@ imagem_para_base64 <- function(caminho_imagem) {
 
 # Converte as imagens para Base64
 imagens_base64 <- lapply(imagens, imagem_para_base64)
+
+#####################################################################################################################
+
+# Exportar lista-setores.csv e mapa-topo.json -----------------------------------------------------------------------
+
+# 1) lista-setores.csv (estrutura idêntica à atual: colunas setor/def/cores e índice na 1ª coluna)
+{
+  if (!dir.exists("./dados")) dir.create("./dados", recursive = TRUE)
+
+  # Monta a lista usando as cores já definidas em `cores_setores`
+  # e adiciona apenas as descrições (def) correspondentes.
+  defs <- c(
+    "ABASTECIMENTO DE ALIMENTOS E OUTROS INSUMOS" = "Provimento de alimentos e/ou outros insumos.",
+    "COMUNICAÇÃO" = "Rádio e TV, imprensa oficial e gráficas.",
+    "DESENVOLVIMENTO REGIONAL" = "Promoção do desenvolvimento econômico regional.",
+    "GÁS E DERIVADOS" = "Aquisição, armazenagem, transporte, envasilhamento, comercialização e distribuição de gás.",
+    "ENERGIA" = "Geração, transmissão, distribuição e comercialização de energia elétrica.",
+    "FINANCEIRO" = "Bancos, bancos de investimento, caixas econômicas e agências de fomento ao crédito.",
+    "GESTÃO DE ATIVOS" = "Gestão de patrimônio, implementação de PPP, operação de obtenção de recursos em mercados de capitais, assessoramento em participações acionárias, securitização e recuperação de crédito.",
+    "HABITAÇÃO E URBANIZAÇÃO" = "Planejamento arquitetônico, fiscalização de obras, estudos de engenharia e arquitetura, avaliações mobiliárias, construção civil em geral e habitação.",
+    "INFORMÁTICA E TECNOLOGIA DA INFORMAÇÃO" = "Atividades de processamento de dados e tecnologia da informação.",
+    "MINERAÇÃO" = "Pesquisa, exploração, extração e beneficiamento de minérios.",
+    "PESQUISA E ASSISTÊNCIA TÉCNICA AGROPECUÁRIA" = "Produção de estudos e pesquisas, promoção do desenvolvimento sustentável e apoio técnico a agricultores e organizações do meio rural.",
+    "PORTOS E HIDROVIAS" = "Administração e gestão de portos, organização e viabilização do transporte aquaviário.",
+    "SAÚDE" = "Serviços laboratoriais e indústria farmacêutica.",
+    "SANEAMENTO" = "Tratamento de água e esgoto, drenagem urbana e águas pluviais.",
+    "TRANSPORTE" = "Serviço de transporte rodoviário, ferroviários e metroviário.",
+    "TURISMO" = "Promoção do turismo regional.",
+    "OUTROS" = "Caso a empresa não se enquadre em nenhum dos setores anteriores."
+  )
+
+  # Usa exatamente os setores e cores definidos previamente em `cores_setores`
+  lista_setores_df <- data.frame(
+    setor = names(cores_setores),
+    def   = unname(defs[names(cores_setores)]),
+    cores = unname(as.character(cores_setores)),
+    check.names = FALSE,
+    stringsAsFactors = FALSE
+  )
+
+  # Mantém índice numérico na primeira coluna (como no arquivo atual)
+  utils::write.csv(
+    lista_setores_df,
+    "./dados/lista-setores.csv",
+    row.names = TRUE,
+    fileEncoding = "UTF-8"
+  )
+}
+
+
+# 2) mapa-topo.json (TopoJSON dos estados, mantendo a mesma estrutura de objeto: objects -> estados) ---------------
+{
+  gerar_topo <- function() {
+    # Dependências necessárias (rmapshaper usa V8 internamente)
+    pkgs <- c("sf", "geojsonio", "rmapshaper", "lwgeom")
+    has <- vapply(pkgs, function(p) requireNamespace(p, quietly = TRUE), logical(1))
+    if (!all(has)) {
+      miss <- pkgs[!has]
+      try(suppressWarnings(utils::install.packages(miss, repos = "https://cloud.r-project.org/")), silent = TRUE)
+    }
+    if (!all(vapply(pkgs, function(p) requireNamespace(p, quietly = TRUE), logical(1)))) return(FALSE)
+
+    # Usar APENAS o objeto já enriquecido em memória
+    if (!exists("mapa_qde_export")) {
+      message("'mapa_qde_export' não encontrado no ambiente. Execute a etapa que o cria antes de gerar o TopoJSON.")
+      return(FALSE)
+    }
+
+    mp_attr <- get("mapa_qde_export")
+    if (!inherits(mp_attr, "sf")) mp_attr <- tryCatch(sf::st_as_sf(mp_attr), error = function(e) NULL)
+    if (is.null(mp_attr)) return(FALSE)
+
+    # Normaliza e reprojeta
+    mp_attr <- sf::st_make_valid(mp_attr)
+    mp_attr <- tryCatch(sf::st_zm(mp_attr, drop = TRUE, what = "ZM"), error = function(e) mp_attr)
+    # Projeta para Web Mercator (EPSG:3857) antes da simplificação via rmapshaper
+    mp_attr <- tryCatch(sf::st_transform(mp_attr, 3857), error = function(e) mp_attr)
+    # Simplificação com preservação de topologia via rmapshaper (usa V8)
+    mp_s <- tryCatch(rmapshaper::ms_simplify(mp_attr, keep = 0.05, keep_shapes = TRUE), error = function(e) mp_attr)
+    mp_s <- sf::st_transform(mp_s, 4326) # Reprojeta de volta para WGS84
+
+    mp_s <- sf::st_make_valid(mp_s)
+
+    out <- "./dados/mapa-topo.json"
+    ok <- FALSE
+    # Exporta TopoJSON
+    try({ geojsonio::topojson_write(mp_s, file = out, object_name = "estados"); ok <- TRUE }, silent = TRUE)
+
+    ok
+  }
+
+  sucesso_topo <- gerar_topo()
+  if (!isTRUE(sucesso_topo)) {
+    message("Aviso: não foi possível gerar './dados/mapa-topo.json' somente a partir de 'mapa_qde_export'.")
+  }
+}
 
 # Cria o filtro e a galeria em HTML
 html <- tags$html(
@@ -1321,11 +1426,87 @@ save_html(html, html_file)
 
 print(paste("Galeria HTML criada em:", html_file))
 
+###############################################################################################################
+
+# Exportações finais (dados.csv e dados_cards.csv) -----------------------
+
+# Garante pasta de saída dentro de v2025
+if (!dir.exists("./dados")) {
+  dir.create("./dados", recursive = TRUE)
+}
+
+## 1) dados.csv
+dados_csv <- dados_selecionados %>%
+  transmute(
+    Estado,
+    emp,
+    sit,
+    setor,
+    esp,
+    dep,
+    PL,
+    lucros,
+    gov_ca,
+    gov_cf,
+    gov_aud,
+    maior_rem,
+    plr_rva,
+    qde_empregados,
+    desp_investimento,
+    desp_pessoal,
+    Dividendos,
+    `Subvenção`,
+    `Subvenção (anterior)`,
+    `Reforço de Capital`,
+    `Reforço de Capital (anterior)`,
+    capital,
+    link,
+    indicio_dependencia,
+    var_capital = 0,
+    var_acoes = 0,
+    Nome_estado,
+    REGIAO,
+    gov,
+    result_NA,
+    `Resultado para o Estado Acionista`
+  ) %>%
+  arrange(Nome_estado, setor, emp)
+
+# Usa write.csv2 para manter separador ";" e vírgula decimal
+write.csv2(dados_csv,
+           file = "./dados/dados.csv",
+           row.names = FALSE,
+           fileEncoding = "UTF-8")
+
+## 2) dados_cards.csv: estrutura reduzida por empresa
+dados_cards <- dados_selecionados %>%
+  transmute(
+    Nome_estado,
+    setor,
+    emp,
+    dep,
+    sit,
+    capital,
+    desp_investimento,
+    lucros,
+    link,
+    indicio_dependencia,
+    tipo_indicio = NA_character_
+  ) %>%
+  arrange(Nome_estado, setor, emp)
+
+write.csv(dados_cards,
+          file = "./dados/dados_cards.csv",
+          row.names = FALSE,
+          fileEncoding = "UTF-8")
+
+print("Arquivos exportados com estrutura: ./dados/dados.csv e ./dados/dados_cards.csv")
+
 library(htmltools)
 library(base64enc)
 
 # Define o caminho da pasta com as imagens
-caminho_absoluto <- "C:/Users/gustavo.silva/OneDrive - Tesouro Nacional/Área de Trabalho/projetos/RAIO_X_EMPRESAS_DOS_ESTADOS/2023/plots_final/quebra"
+caminho_absoluto <- paste0(pasta_caminho_absoluto, "plots_final/quebra")
 
 # Lista as imagens na pasta
 imagens <- list.files(caminho_absoluto, pattern = "\\.png$", full.names = TRUE)

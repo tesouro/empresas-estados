@@ -122,6 +122,19 @@ const vis_mapa = {
             vis_mapa.utils.monta_escala_cores();
             vis_mapa.utils.resize();
             vis_mapa.fs.constroi_mapa();
+
+            // Pega o nome do primeiro setor da lista de dados
+            let primeiro_setor_nome = vis_mapa.data.lista_setores[0].setor;
+            
+            // Limpa o nome (remove acentos igual você faz no utils)
+            let chave_setor = vis_mapa.utils.remove_acentos(primeiro_setor_nome);
+
+            // Atualiza o estado
+            vis_mapa.state.setor = chave_setor;
+
+            // Manda pintar e mostrar o texto
+            vis_mapa.fs.pinta_mapa(chave_setor);
+            vis_mapa.fs.mostra_box_setor(chave_setor);
         
         },
 
@@ -220,6 +233,29 @@ const vis_mapa = {
                 topodata, 
                 topodata.objects.estados)
               .features;
+            
+            
+            feats.forEach(feature => {
+                let geom = feature.geometry;
+                
+                // Função auxiliar para inverter os anéis do polígono
+                const inverter_aneis = (coords_poligono) => {
+                    coords_poligono.forEach(anel => {
+                        anel.reverse(); // O pulo do gato: inverte o array
+                    });
+                };
+
+                if (geom.type === "Polygon") {
+                    inverter_aneis(geom.coordinates);
+                } 
+                else if (geom.type === "MultiPolygon") {
+                    // Se for MultiPolygon (estados com ilhas), tem um nível a mais
+                    geom.coordinates.forEach(poligono => {
+                        inverter_aneis(poligono);
+                    });
+                }
+            });
+            
 
             let geodata = {
 
@@ -231,15 +267,17 @@ const vis_mapa = {
             console.log(geodata);
 
 
-            let projecao = d3
-              .geoConicEqualArea()
-              .parallels([-33.8, 5.3])
-              .rotate([40, 0])
-              .fitSize([dim, dim], geodata)
-            ;
+            // 1. Define a projeção
+            let projecao = d3.geoConicEqualArea()
+                .parallels([-33.8, 5.3]) // Paralelos do Brasil
+                .rotate([54, 0])         // Roda para longitude 54W (Centro do BR)
+                .fitSize([dim, dim], geodata); // Força o GeoJSON a caber na caixa [dim x dim]
+
 
             let svg = d3.select("svg.vis-mapa");
-
+            
+            // Limpa o SVG antes de desenhar (evita duplicar se a função rodar 2x)
+            svg.selectAll("*").remove(); 
 
             svg.append("g")
               .selectAll("path")
@@ -247,8 +285,8 @@ const vis_mapa = {
               .join("path")
               .attr("fill", vis_mapa.config.cores.padrao)
               .attr("stroke", vis_mapa.config.cores.divisa)
-              .attr("d", d3.geoPath().projection(projecao))
-            ;
+              .attr("stroke-width", 0.5) // Adicionei espessura fina para a linha ficar elegante
+              .attr("d", d3.geoPath().projection(projecao));
 
         },
 
@@ -277,5 +315,4 @@ const vis_mapa = {
 }
 
 vis_mapa.fs.start();
-
 

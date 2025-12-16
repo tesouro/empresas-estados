@@ -10,14 +10,9 @@ const cards = {
         _estados : null,
 
         load : () => {
-
             d3.csv('./dados/dados_cards.csv').then(data => {
-
                 cards.ctrl.after_data_is_loaded(data);
-
             })
-
-
         },
 
         filter : (estado_selecionado) => {
@@ -151,7 +146,19 @@ const cards = {
 
                 //console.log(d3.select(this), setor);
 
-                const data = cards.data._filtered.filter(d => d.setor == setor);
+                // Ordena: Dependentes (0), Não Dependentes (1), Não Dependente com indícios (2)
+                const prioridade = (d) => {
+                    if (d.dep === 'Dependente') return 0;
+                    // "Não Dependente" sem indícios
+                    if (d.dep !== 'Dependente' && (d.tipo_indicio === 'NA' || d.tipo_indicio === '' || d.tipo_indicio == null)) return 1;
+                    // "Não Dependente" com indícios de dependência
+                    return 2;
+                };
+
+                const data = cards.data._filtered
+                  .filter(d => d.setor == setor)
+                  .slice()
+                  .sort((a,b) => d3.ascending(prioridade(a), prioridade(b)) || d3.ascending(a.emp, b.emp));
 
                 d3.select(this)
                   .selectAll('div.empresa')
